@@ -1,3 +1,4 @@
+from models.user import UserInDB, User, Token, TokenData
 from config import MONGODB_URL, MAX_CONNECTIONS_COUNT, MIN_CONNECTIONS_COUNT
 import logging
 from motor.motor_asyncio import AsyncIOMotorClient
@@ -8,7 +9,6 @@ from fastapi import Depends, FastAPI, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from jose import JWTError, jwt
 from passlib.context import CryptContext
-from pydantic import BaseModel
 import uvicorn
 from bson import ObjectId
 # to get a string like this run:
@@ -20,16 +20,18 @@ ACCESS_TOKEN_EXPIRE_MINUTES = 30
 app = FastAPI()
 
 
-class User(BaseModel):
-    username: str
-    email: Optional[str] = None
-    full_name: Optional[str] = None
-    disabled: Optional[bool] = None
+@app.on_event("startup")
+async def connect_to_mongo():
+    db.client = AsyncIOMotorClient(
+        str(MONGODB_URL), maxPoolSize=MAX_CONNECTIONS_COUNT, minPoolSize=MIN_CONNECTIONS_COUNT,
+    )
+    print("connected to mongodb")
 
 
-class UserInDB(User):
-    hashed_password: str
-    _id: ObjectId
+@app.on_event("shutdown")
+async def close_mongo_connection():
+    db.client.close()
+    logging.info("closed mongo connection")
 
 
 class MongoDB:
@@ -69,42 +71,6 @@ async def get_user(name) -> UserInDB:
         return None
 
 
-@app.on_event("startup")
-async def connect_to_mongo():
-    db.client = AsyncIOMotorClient(
-        str(MONGODB_URL), maxPoolSize=MAX_CONNECTIONS_COUNT, minPoolSize=MIN_CONNECTIONS_COUNT,
-    )
-    print("connected to mongodb")
-
-
-@app.on_event("shutdown")
-async def close_mongo_connection():
-    db.client.close()
-    logging.info("closed mongo connection")
-
-
-# FIle ENds
-
-fake_users_db = {
-    "johndoe": {
-        "username": "johndoe",
-        "full_name": "John Doe",
-        "email": "johndoe@example.com",
-        "hashed_password": "$2b$12$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW",
-        "disabled": False,
-    }
-}
-
-
-class Token(BaseModel):
-    access_token: str
-    token_type: str
-
-
-class TokenData(BaseModel):
-    username: Optional[str] = None
-
-
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
@@ -129,7 +95,7 @@ def create_access_token(data: dict, expires_delta: Optional[timedelta] = None):
     return encoded_jwt
 
 
-async def authenticate_user(fake_db, username: str, password: str):
+async def authenticate_user(username: str, password: str):
     print('auth_usr')
     user = await get_user(username)
     if not user:
@@ -169,8 +135,7 @@ async def get_current_active_user(current_user: User = Depends(get_current_user)
 
 @app.post("/token", response_model=Token)
 async def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends()):
-    user = await authenticate_user(
-        fake_users_db, form_data.username, form_data.password)
+    user = await authenticate_user(form_data.username, form_data.password)
     if not user:
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
@@ -196,9 +161,8 @@ async def read_own_items(current_user: User = Depends(get_current_active_user)):
 
 @app.get('/hello')
 async def namaskaar(cur_user: User = Depends(get_current_active_user)):
-    print("hello")
     return {"status": "hello world"}
 
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000, reload=True)
+    uvicorn.run(app, host="0.0.0.0", port=8000, debug=True)

@@ -13,6 +13,9 @@ https://github.com/markqiu/fastapi-mongodb-realworld-example-app/tree/master/app
 
 https://fastapi.tiangolo.com/advanced/nosql-databases/#define-a-constant-to-use-as-a-document-type
 
+## Run
+> uvicorn app:app --host 0.0.0.0 --port 8000 --reload
+
 ## Protected Route
 @app.get("/items/")
 async def read_items(token: str = Depends(oauth2_scheme)):
