@@ -1,3 +1,6 @@
+from config import MONGODB_URL, MAX_CONNECTIONS_COUNT, MIN_CONNECTIONS_COUNT
+import logging
+from motor.motor_asyncio import AsyncIOMotorClient
 from datetime import datetime, timedelta
 from typing import Optional
 
@@ -7,13 +10,80 @@ from jose import JWTError, jwt
 from passlib.context import CryptContext
 from pydantic import BaseModel
 import uvicorn
-
+from bson import ObjectId
 # to get a string like this run:
 # openssl rand -hex 32
 SECRET_KEY = "09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7"
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
+app = FastAPI()
+
+
+class User(BaseModel):
+    username: str
+    email: Optional[str] = None
+    full_name: Optional[str] = None
+    disabled: Optional[bool] = None
+
+
+class UserInDB(User):
+    hashed_password: str
+    _id: ObjectId
+
+
+class MongoDB:
+    client: AsyncIOMotorClient = None
+
+
+db = MongoDB()
+
+
+async def get_nosql_db() -> AsyncIOMotorClient:
+    return db.client
+
+
+# async def create_user(request, collection):
+#     salt = uuid.uuid4().hex
+#     hashed_password = hashlib.sha512(request.password.encode(
+#         "utf-8") + salt.encode("utf-8")).hexdigest()
+
+#     user = {}
+#     user["username"] = request.username
+#     user["salt"] = salt
+#     user["hashed_password"] = hashed_password
+#     # user = User(**user)
+#     dbuser = UserInDB(**user)
+#     response = await collection.insert_one(dbuser.dict())
+#     return {"id_inserted": str(response.inserted_id)}
+
+async def get_user(name) -> UserInDB:
+    client = await get_nosql_db()
+    db = client["car_rental"]
+    collection = db.users
+    row = await collection.find_one({"username": name})
+    print(row)
+    if row is not None:
+        return UserInDB(**row)
+    else:
+        return None
+
+
+@app.on_event("startup")
+async def connect_to_mongo():
+    db.client = AsyncIOMotorClient(
+        str(MONGODB_URL), maxPoolSize=MAX_CONNECTIONS_COUNT, minPoolSize=MIN_CONNECTIONS_COUNT,
+    )
+    print("connected to mongodb")
+
+
+@app.on_event("shutdown")
+async def close_mongo_connection():
+    db.client.close()
+    logging.info("closed mongo connection")
+
+
+# FIle ENds
 
 fake_users_db = {
     "johndoe": {
@@ -35,22 +105,9 @@ class TokenData(BaseModel):
     username: Optional[str] = None
 
 
-class User(BaseModel):
-    username: str
-    email: Optional[str] = None
-    full_name: Optional[str] = None
-    disabled: Optional[bool] = None
-
-
-class UserInDB(User):
-    hashed_password: str
-
-
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
-
-app = FastAPI()
 
 
 def verify_password(plain_password, hashed_password):
@@ -59,21 +116,6 @@ def verify_password(plain_password, hashed_password):
 
 def get_password_hash(password):
     return pwd_context.hash(password)
-
-
-def get_user(db, username: str):
-    if username in db:
-        user_dict = db[username]
-        return UserInDB(**user_dict)
-
-
-def authenticate_user(fake_db, username: str, password: str):
-    user = get_user(fake_db, username)
-    if not user:
-        return False
-    if not verify_password(password, user.hashed_password):
-        return False
-    return user
 
 
 def create_access_token(data: dict, expires_delta: Optional[timedelta] = None):
@@ -87,7 +129,18 @@ def create_access_token(data: dict, expires_delta: Optional[timedelta] = None):
     return encoded_jwt
 
 
+async def authenticate_user(fake_db, username: str, password: str):
+    print('auth_usr')
+    user = await get_user(username)
+    if not user:
+        return False
+    if not verify_password(password, user.hashed_password):
+        return False
+    return user
+
+
 async def get_current_user(token: str = Depends(oauth2_scheme)):
+    print('get_current_usr')
     credentials_exception = HTTPException(
         status_code=status.HTTP_401_UNAUTHORIZED,
         detail="Could not validate credentials",
@@ -101,7 +154,7 @@ async def get_current_user(token: str = Depends(oauth2_scheme)):
         token_data = TokenData(username=username)
     except JWTError:
         raise credentials_exception
-    user = get_user(fake_users_db, username=token_data.username)
+    user = await get_user(token_data.username)
     if user is None:
         raise credentials_exception
     return user
@@ -116,7 +169,7 @@ async def get_current_active_user(current_user: User = Depends(get_current_user)
 
 @app.post("/token", response_model=Token)
 async def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends()):
-    user = authenticate_user(
+    user = await authenticate_user(
         fake_users_db, form_data.username, form_data.password)
     if not user:
         raise HTTPException(
@@ -148,4 +201,4 @@ async def namaskaar(cur_user: User = Depends(get_current_active_user)):
 
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8000, reload=True)
