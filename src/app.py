@@ -1,78 +1,18 @@
-from models.user import UserInDB, User, Token, TokenData
-from config import MONGODB_URL, MAX_CONNECTIONS_COUNT, MIN_CONNECTIONS_COUNT
-import logging
 from motor.motor_asyncio import AsyncIOMotorClient
 from datetime import datetime, timedelta
 from typing import Optional
-
 from fastapi import Depends, FastAPI, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from jose import JWTError, jwt
 from passlib.context import CryptContext
 import uvicorn
 from bson import ObjectId
-# to get a string like this run:
-# openssl rand -hex 32
-SECRET_KEY = "09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7"
-ALGORITHM = "HS256"
-ACCESS_TOKEN_EXPIRE_MINUTES = 30
-
-app = FastAPI()
-
-
-@app.on_event("startup")
-async def connect_to_mongo():
-    db.client = AsyncIOMotorClient(
-        str(MONGODB_URL), maxPoolSize=MAX_CONNECTIONS_COUNT, minPoolSize=MIN_CONNECTIONS_COUNT,
-    )
-    print("connected to mongodb")
-
-
-@app.on_event("shutdown")
-async def close_mongo_connection():
-    db.client.close()
-    logging.info("closed mongo connection")
-
-
-class MongoDB:
-    client: AsyncIOMotorClient = None
-
-
-db = MongoDB()
-
-
-async def get_nosql_db() -> AsyncIOMotorClient:
-    return db.client
-
-
-# async def create_user(request, collection):
-#     salt = uuid.uuid4().hex
-#     hashed_password = hashlib.sha512(request.password.encode(
-#         "utf-8") + salt.encode("utf-8")).hexdigest()
-
-#     user = {}
-#     user["username"] = request.username
-#     user["salt"] = salt
-#     user["hashed_password"] = hashed_password
-#     # user = User(**user)
-#     dbuser = UserInDB(**user)
-#     response = await collection.insert_one(dbuser.dict())
-#     return {"id_inserted": str(response.inserted_id)}
-
-async def get_user(name) -> UserInDB:
-    client = await get_nosql_db()
-    db = client["car_rental"]
-    collection = db.users
-    row = await collection.find_one({"username": name})
-    print(row)
-    if row is not None:
-        return UserInDB(**row)
-    else:
-        return None
-
+from utils.config import MONGODB_URL, SECRET_KEY, ALGORITHM, ACCESS_TOKEN_EXPIRE_MINUTES
+from db.mongodb import get_user, db
+from src import app
+from models.user import UserInDB, User, Token, TokenData
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
-
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
 
@@ -96,7 +36,6 @@ def create_access_token(data: dict, expires_delta: Optional[timedelta] = None):
 
 
 async def authenticate_user(username: str, password: str):
-    print('auth_usr')
     user = await get_user(username)
     if not user:
         return False

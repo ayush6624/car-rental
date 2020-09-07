@@ -1,13 +1,15 @@
 # Car-Rental
 
+## To-Do
+- [ ] Convert User signup functions into class based functions
+- [ ] Deployment
+  - [ ] Docker
+  - [ ] GCP Cloud Run
+
 https://fastapi.tiangolo.com/
 Login - https://fastapi.tiangolo.com/tutorial/security/oauth2-jwt/
 
 https://fastapi.tiangolo.com/tutorial/security/
-
-SQL - `sqlalchemy`
-Mongo - `motor` 
-
 https://motor.readthedocs.io/en/stable/
 https://github.com/markqiu/fastapi-mongodb-realworld-example-app/tree/master/app
 
@@ -29,11 +31,6 @@ db = client["database_name"]
 collection = db["users"]
 
 
-app = FastAPI()
-
-
-user_db = MongoDBUserDatabase(UserDB, collection)
-
 https://frankie567.github.io/fastapi-users/configuration/databases/mongodb/
-
 http://0.0.0.0:8000/docs
+http://0.0.0.0:8000/redoc

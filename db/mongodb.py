@@ -1,9 +1,7 @@
 from motor.motor_asyncio import AsyncIOMotorClient
-import logging
-from config import MONGODB_URL, MAX_CONNECTIONS_COUNT, MIN_CONNECTIONS_COUNT
+from utils.config import MONGODB_URL, MAX_CONNECTIONS_COUNT, MIN_CONNECTIONS_COUNT
 from models.user import UserInDB
-
-# MongoDB
+from src import app
 
 
 class MongoDB:
@@ -11,6 +9,18 @@ class MongoDB:
 
 
 db = MongoDB()
+
+
+@app.on_event("startup")
+async def connect_to_mongo():
+    db.client = AsyncIOMotorClient(MONGODB_URL)
+    print("MongoDB Connected")
+
+
+@app.on_event("shutdown")
+async def close_mongo_connection():
+    db.client.close()
+    print("MongoDB Disconnected")
 
 
 async def get_nosql_db() -> AsyncIOMotorClient:
@@ -40,15 +50,3 @@ async def get_user(name) -> UserInDB:
         return UserInDB(**row)
     else:
         return None
-
-
-async def connect_to_mongo():
-    db.client = AsyncIOMotorClient(
-        str(MONGODB_URL), maxPoolSize=MAX_CONNECTIONS_COUNT, minPoolSize=MIN_CONNECTIONS_COUNT,
-    )
-    logging.info("connected to mongodb")
-
-
-async def close_mongo_connection():
-    db.client.close()
-    logging.info("closed mongo connection")
