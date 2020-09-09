@@ -1,0 +1,98 @@
+{
+    "html_attributions": [],
+    "results": [
+        {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "Bhavbhuti Marg, Ratan Lal Market, Kamla Market, Ajmeri Gate, New Delhi, Delhi 110006, India",
+            "geometry": {
+                "location": {
+                    "lat": 28.6428915,
+                    "lng": 77.2190894
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 28.64424012989272,
+                        "lng": 77.22043097989271
+                    },
+                    "southwest": {
+                        "lat": 28.64154047010728,
+                        "lng": 77.21773132010728
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/train-71.png",
+            "name": "New Delhi Railway Station",
+            "photos": [
+                {
+                    "height": 3456,
+                    "html_attributions": [
+                        "\u003ca href=\"https://maps.google.com/maps/contrib/104122929899581199542\"\u003eShubham Mishra\u003c/a\u003e"
+                    ],
+                    "photo_reference": "CkQ0AAAAGdRf8SnDfmw4bKn5aQNd22HHHage5LUuwtjUqdkNdOQbsfufIcr7XCrpWGjDnlV7vtdKiI_4031zNQCHsSBSjRIQJ8nM9mDiKsKYQ6MrGhY76hoUQFB38LuJkZOV3oFav4DCVS3-Scg",
+                    "width": 4608
+                }
+            ],
+            "place_id": "ChIJBXs6ETz9DDkRFllm4f46kfg",
+            "plus_code": {
+                "compound_code": "J6V9+5J New Delhi, Delhi",
+                "global_code": "7JWVJ6V9+5J"
+            },
+            "rating": 4,
+            "reference": "ChIJBXs6ETz9DDkRFllm4f46kfg",
+            "types": [
+                "train_station",
+                "transit_station",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 21541
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "Mori Gate, New Delhi, Delhi 110006, India",
+            "geometry": {
+                "location": {
+                    "lat": 28.6609621,
+                    "lng": 77.2276794
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 28.66361275,
+                        "lng": 77.23012019999999
+                    },
+                    "southwest": {
+                        "lat": 28.65956334999999,
+                        "lng": 77.2224058
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/train-71.png",
+            "name": "Delhi Junction",
+            "photos": [
+                {
+                    "height": 806,
+                    "html_attributions": [
+                        "\u003ca href=\"https://maps.google.com/maps/contrib/106724362175719530931\"\u003eKrishna bind\u003c/a\u003e"
+                    ],
+                    "photo_reference": "CkQ0AAAADXuNj2GKkb0MqDN-Hoc6m_0Bttw83y_XBU2GJRvPctgGiHfgh6R6h1blkEATEsIc3O7z8h6BFEut-YVaxIjmBBIQ_TVIuaVRUAiiqcYyI2RoIRoUfz0_Eo8_ooqo12igg6BYh0dNv7o",
+                    "width": 1080
+                }
+            ],
+            "place_id": "ChIJ03AFdA_9DDkRuW2vyViPeAs",
+            "plus_code": {
+                "compound_code": "M66H+93 New Delhi, Delhi",
+                "global_code": "7JWVM66H+93"
+            },
+            "rating": 3.8,
+            "reference": "ChIJ03AFdA_9DDkRuW2vyViPeAs",
+            "types": [
+                "train_station",
+                "transit_station",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 6657
+        }
+    ],
+    "status": "OK"
+}

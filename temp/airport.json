@@ -1,0 +1,1128 @@
+{
+	"status": 1,
+	"terminals": [{
+		"city": "Bangalore",
+		"city_link_name": "bangalore",
+		"terminals": [{
+			"name": "Terminal (T1)",
+			"id": 1,
+			"lat": "13.198083",
+			"lng": "77.710944",
+			"radius": 0.7,
+			"exception_locations": [],
+			"distance": 7.3,
+			"fare": 500,
+			"fleet_wait_time": 5,
+			"popup": {
+				"header": "Booking from Airport?",
+				"airport_data": {
+					"header": "Terminal Pickup",
+					"sub_header": "Upon arrival, please come to the Premium Parking - P3 (Opposite to Hotel Taj) inside the airport to pick-up your car (Not available for One-way bookings)"
+				},
+				"pickup_data": {
+					"header": "I'll pick up the car myself",
+					"sub_header": "Nearest Zoomcar site is $distance km away from the $terminal"
+				},
+				"hd_data": {
+					"header": "Doorstep Delivery",
+					"sub_header": "Car will be delivered at the address you will provide"
+				}
+			},
+			"description": "Kempegowda International Airport",
+			"terminal_location_id": 17,
+			"pickup_mode": 3,
+			"landmark": "Premium Parking - P3, Next To BIAL Taxi Parking (Take right at Hatti Kaapi while coming from arrival gate)"
+		}]
+	}, {
+		"city": "Pune",
+		"city_link_name": "pune",
+		"terminals": [{
+			"name": "Terminal (T1)",
+			"id": 9,
+			"lat": "18.578877",
+			"lng": "73.909103",
+			"radius": 0.3,
+			"exception_locations": [],
+			"distance": 2.3,
+			"fare": 400,
+			"fleet_wait_time": 15,
+			"popup": {
+				"header": "Booking from Airport?",
+				"airport_data": {
+					"header": "Terminal Pickup",
+					"sub_header": "Inform us of your arrival, and we will be there within 30 mins (Not available for One-way bookings)."
+				},
+				"pickup_data": {
+					"header": "I'll pick up the car myself",
+					"sub_header": "Nearest Zoomcar site is $distance km away from the $terminal"
+				},
+				"hd_data": {
+					"header": "Doorstep Delivery",
+					"sub_header": "Car will be delivered at the address you will provide"
+				}
+			},
+			"description": "Pune Airport",
+			"terminal_location_id": 43,
+			"pickup_mode": 1,
+			"landmark": "Arrival Gate"
+		}]
+	}, {
+		"city": "Delhi NCR",
+		"city_link_name": "delhi",
+		"terminals": [{
+			"name": "Terminal - 1 (T1)",
+			"id": 2,
+			"lat": "28.562667",
+			"lng": "77.12122",
+			"radius": 0.5,
+			"exception_locations": [],
+			"distance": 4.2,
+			"fare": 600,
+			"fleet_wait_time": 15,
+			"popup": {
+				"header": "Booking from Airport?",
+				"airport_data": {
+					"header": "Terminal Pickup",
+					"sub_header": "Inform us of your arrival, and we will be there within 15  mins (Not available for One-way bookings)."
+				},
+				"pickup_data": {
+					"header": "I'll pick up the car myself",
+					"sub_header": "Nearest Zoomcar site is $distance km away from the $terminal"
+				},
+				"hd_data": {
+					"header": "Doorstep Delivery",
+					"sub_header": "Car will be delivered at the address you will provide"
+				}
+			},
+			"description": "Indira Gandhi International Airport",
+			"terminal_location_id": 19727,
+			"pickup_mode": 3,
+			"landmark": "General Parking"
+		}, {
+			"name": "Terminal - 3 (T3)",
+			"id": 3,
+			"lat": "28.554621",
+			"lng": "77.088118",
+			"radius": 1.0,
+			"exception_locations": [{
+				"lat": "28.556162",
+				"lng": "77.099958"
+			}, {
+				"lat": "28.549446",
+				"lng": "77.118086"
+			}],
+			"distance": 2.6,
+			"fare": 700,
+			"fleet_wait_time": 15,
+			"popup": {
+				"header": "Booking from Airport?",
+				"airport_data": {
+					"header": "Terminal Pickup",
+					"sub_header": "Inform us of your arrival, and we will be there within 15  mins (Not available for One-way bookings)."
+				},
+				"pickup_data": {
+					"header": "I'll pick up the car myself",
+					"sub_header": "Nearest Zoomcar site is $distance km away from the $terminal"
+				},
+				"hd_data": {
+					"header": "Doorstep Delivery",
+					"sub_header": "Car will be delivered at the address you will provide"
+				}
+			},
+			"description": "Indira Gandhi International Airport",
+			"terminal_location_id": 19727,
+			"pickup_mode": 3,
+			"landmark": "Level 1, Multi Level Car Parking, Near Pay Booth, Pillar No. K11"
+		}, {
+			"name": "Terminal - 2 (T2)",
+			"id": 45,
+			"lat": "28.559025",
+			"lng": "77.08439",
+			"radius": 0.0,
+			"exception_locations": [],
+			"distance": 3.2,
+			"fare": 600,
+			"fleet_wait_time": 15,
+			"popup": {
+				"header": "Booking from Airport?",
+				"airport_data": {
+					"header": "Terminal Pickup",
+					"sub_header": "Inform us of your arrival, and we will be there within 15  mins (Not available for One-way bookings)."
+				},
+				"pickup_data": {
+					"header": "I'll pick up the car myself",
+					"sub_header": "Nearest Zoomcar site is $distance km away from the $terminal"
+				},
+				"hd_data": {
+					"header": "Doorstep Delivery",
+					"sub_header": "Car will be delivered at the address you will provide"
+				}
+			},
+			"description": "Indira Gandhi International Airport",
+			"terminal_location_id": 19727,
+			"pickup_mode": 3,
+			"landmark": "Parking Lot main entrance"
+		}]
+	}, {
+		"city": "Mumbai",
+		"city_link_name": "mumbai",
+		"terminals": [{
+			"name": "International Terminal (T2)",
+			"id": 4,
+			"lat": "19.1038649",
+			"lng": "72.8713771",
+			"radius": 0.25,
+			"exception_locations": [{
+				"lat": "19.112955",
+				"lng": "72.852461"
+			}],
+			"distance": 0.1,
+			"fare": 230,
+			"fleet_wait_time": 15,
+			"popup": {
+				"header": "Booking from Airport?",
+				"airport_data": {
+					"header": "Terminal Pickup",
+					"sub_header": "Upon arrival, come to the MCGM parking in Fulcrum business centre besides Hyatt Regency. The MCGM parking is roughly 800 metres from arrivals. "
+				},
+				"pickup_data": {
+					"header": "I'll pick up the car myself",
+					"sub_header": "Nearest Zoomcar site is $distance km away from the $terminal"
+				},
+				"hd_data": {
+					"header": "Doorstep Delivery",
+					"sub_header": "Car will be delivered at the address you will provide"
+				}
+			},
+			"description": "Chhatrapati Shivaji International Airport",
+			"terminal_location_id": 6204,
+			"pickup_mode": 3,
+			"landmark": "MCGM Pay \u0026 Park, Besides Hyatt Regency"
+		}, {
+			"name": "Domestic Terminal (T1A/T1B)",
+			"id": 5,
+			"lat": "19.0939709",
+			"lng": "72.8519315",
+			"radius": 0.25,
+			"exception_locations": [{
+				"lat": "19.08956",
+				"lng": "72.865614"
+			}],
+			"distance": 0.5,
+			"fare": 250,
+			"fleet_wait_time": 15,
+			"popup": {
+				"header": "Booking from Airport?",
+				"airport_data": {
+					"header": "Terminal Pickup",
+					"sub_header": "Upon arrival, come to the parking area within the airport to pick-up your car"
+				},
+				"pickup_data": {
+					"header": "I'll pick up the car myself",
+					"sub_header": "Nearest Zoomcar site is $distance km away from the $terminal"
+				},
+				"hd_data": {
+					"header": "Doorstep Delivery",
+					"sub_header": "Car will be delivered at the address you will provide"
+				}
+			},
+			"description": "Chhatrapati Shivaji International Airport",
+			"terminal_location_id": 239,
+			"pickup_mode": 3,
+			"landmark": "Domestic Airport (Multi Level Car Park - P5)"
+		}]
+	}, {
+		"city": "Chennai",
+		"city_link_name": "chennai",
+		"terminals": [{
+			"name": "Domestic Terminal (Dom)",
+			"id": 6,
+			"lat": "12.9828056",
+			"lng": "80.1643946",
+			"radius": 0.4,
+			"exception_locations": [{
+				"lat": "12.994112",
+				"lng": "80.170867"
+			}],
+			"distance": 1.4,
+			"fare": 199,
+			"fleet_wait_time": 15,
+			"popup": {
+				"header": "Booking from Airport?",
+				"airport_data": {
+					"header": "Terminal Pickup",
+					"sub_header": "Inform us of your arrival, and wait near Indian Flagpost, Behind Madras Coffee House, we will be there within 15  mins (Not available for One-way bookings)."
+				},
+				"pickup_data": {
+					"header": "I'll pick up the car myself",
+					"sub_header": "Nearest Zoomcar site is $distance km away from the $terminal"
+				},
+				"hd_data": {
+					"header": "Doorstep Delivery",
+					"sub_header": "Car will be delivered at the address you will provide"
+				}
+			},
+			"description": "Chennai Domestic Airport",
+			"terminal_location_id": 268,
+			"pickup_mode": 1,
+			"landmark": "Indian Flagpost, Behind Madras Coffee House"
+		}, {
+			"name": "International Terminal (Int)",
+			"id": 7,
+			"lat": "12.980815",
+			"lng": "80.160863",
+			"radius": 0.4,
+			"exception_locations": [],
+			"distance": 1.0,
+			"fare": 199,
+			"fleet_wait_time": 15,
+			"popup": {
+				"header": "Booking from Airport?",
+				"airport_data": {
+					"header": "Terminal Pickup",
+					"sub_header": "Inform us of your arrival and wait near Fast Track parking. We will be there within 15  mins (Not available for One-way bookings)."
+				},
+				"pickup_data": {
+					"header": "I'll pick up the car myself",
+					"sub_header": "Nearest Zoomcar site is $distance km away from the $terminal"
+				},
+				"hd_data": {
+					"header": "Doorstep Delivery",
+					"sub_header": "Car will be delivered at the address you will provide"
+				}
+			},
+			"description": "Chennai International Airport",
+			"terminal_location_id": 268,
+			"pickup_mode": 1,
+			"landmark": "Fast Track parking"
+		}]
+	}, {
+		"city": "Hyderabad",
+		"city_link_name": "hyderabad",
+		"terminals": [{
+			"name": "Terminal-1 (1A)",
+			"id": 8,
+			"lat": "17.237621",
+			"lng": "78.430215",
+			"radius": 0.5,
+			"exception_locations": [],
+			"distance": 5.7,
+			"fare": 500,
+			"fleet_wait_time": 15,
+			"popup": {
+				"header": "Booking from Airport?",
+				"airport_data": {
+					"header": "Terminal Pickup",
+					"sub_header": "Inform us of your arrival, and we will be there within 45  mins. Alternatively, you can pick up the car from pick up point E( E1, Beside Paybooth 2)"
+				},
+				"pickup_data": {
+					"header": "I'll pick up the car myself",
+					"sub_header": "Nearest Zoomcar site is $distance km away from the $terminal"
+				},
+				"hd_data": {
+					"header": "Doorstep Delivery",
+					"sub_header": "Car will be delivered at the address you will provide"
+				}
+			},
+			"description": "Hyderabad Airport",
+			"terminal_location_id": 264,
+			"pickup_mode": 2,
+			"landmark": "RGI Airport Arrivals Ramp(if you call us 45 mins prior) or you can pick your car from pick-up point 'E' (E1, Beside Paybooth 2)"
+		}]
+	}, {
+		"city": "Chandigarh",
+		"city_link_name": "chandigarh",
+		"terminals": [{
+			"name": "Terminal (T1)",
+			"id": 10,
+			"lat": "30.666838",
+			"lng": "76.785065",
+			"radius": 0.25,
+			"exception_locations": [{
+				"lat": "30.676796",
+				"lng": "76.772151"
+			}, {
+				"lat": "30.675408",
+				"lng": "76.795824"
+			}],
+			"distance": 7.3,
+			"fare": 600,
+			"fleet_wait_time": 15,
+			"popup": {
+				"header": "Booking from Airport?",
+				"airport_data": {
+					"header": "Terminal Pickup",
+					"sub_header": "Inform us of your arrival, and we will be there within 15  mins (Not available for One-way bookings)."
+				},
+				"pickup_data": {
+					"header": "I'll pick up the car myself",
+					"sub_header": "Nearest Zoomcar site is $distance km away from the $terminal"
+				},
+				"hd_data": {
+					"header": "Doorstep Delivery",
+					"sub_header": "Car will be delivered at the address you will provide"
+				}
+			},
+			"description": "Chandigarh Airport",
+			"terminal_location_id": 21112,
+			"pickup_mode": 2,
+			"landmark": "Airport Parking Canteen"
+		}]
+	}, {
+		"city": "Kolkata",
+		"city_link_name": "kolkata",
+		"terminals": [{
+			"name": "Terminal (2)",
+			"id": 11,
+			"lat": "22.6426994",
+			"lng": "88.435854",
+			"radius": 0.25,
+			"exception_locations": [{
+				"lat": "22.642422",
+				"lng": "88.439127"
+			}],
+			"distance": 1.2,
+			"fare": 500,
+			"fleet_wait_time": 15,
+			"popup": {
+				"header": "Booking from Airport?",
+				"airport_data": {
+					"header": "Terminal Pickup",
+					"sub_header": "Upon arrival, please exit from arrival gate 3A-3B, across the road you can spot BOI ATM, just beside the ATM there is walkway for car parking, walk till pillar no. G-176 and turn right and walk to another 50 meters, the car should be parked in the vicinity."
+				},
+				"pickup_data": {
+					"header": "I'll pick up the car myself",
+					"sub_header": "Nearest Zoomcar site is $distance km away from the $terminal"
+				},
+				"hd_data": {
+					"header": "Doorstep Delivery",
+					"sub_header": "Car will be delivered at the address you will provide"
+				}
+			},
+			"description": "Kolkata Airport",
+			"terminal_location_id": 4858,
+			"pickup_mode": 1,
+			"landmark": "Airport Car Parking on Basement"
+		}]
+	}, {
+		"city": "Ahmedabad",
+		"city_link_name": "ahmedabad",
+		"terminals": [{
+			"name": "Sardar Patel International Airport (T1)",
+			"id": 43,
+			"lat": "23.0725",
+			"lng": "72.620083",
+			"radius": 0.25,
+			"exception_locations": [{
+				"lat": "23.073426",
+				"lng": "72.626571"
+			}],
+			"distance": 2.1,
+			"fare": 300,
+			"fleet_wait_time": 15,
+			"popup": {
+				"header": "Booking from Airport?",
+				"airport_data": {
+					"header": "Terminal Pickup",
+					"sub_header": "Inform us on your arrival, and we will be there within 15  mins (Not available for One-way bookings)."
+				},
+				"pickup_data": {
+					"header": "I'll pick up the car myself",
+					"sub_header": "Nearest Zoomcar site is $distance km away from the $terminal"
+				},
+				"hd_data": {
+					"header": "Doorstep Delivery",
+					"sub_header": "Car will be delivered at the address you will provide"
+				}
+			},
+			"description": "Ahmedabad Airport",
+			"terminal_location_id": 896,
+			"pickup_mode": 2,
+			"landmark": "Arrivals - Right next to Dena Bank"
+		}]
+	}, {
+		"city": "Coimbatore",
+		"city_link_name": "coimbatore",
+		"terminals": [{
+			"name": "Terminal-1 (T1)",
+			"id": 15,
+			"lat": "11.030918",
+			"lng": "77.038838",
+			"radius": 0.25,
+			"exception_locations": [],
+			"distance": 0.8,
+			"fare": 199,
+			"fleet_wait_time": 15,
+			"popup": {
+				"header": "Booking from Airport?",
+				"airport_data": {
+					"header": "Terminal Pickup",
+					"sub_header": "Inform us of your arrival, and we will be there within 15  mins (Not available for One-way bookings)."
+				},
+				"pickup_data": {
+					"header": "I'll pick up the car myself",
+					"sub_header": "Nearest Zoomcar site is $distance km away from the $terminal"
+				},
+				"hd_data": {
+					"header": "Doorstep Delivery",
+					"sub_header": "Car will be delivered at the address you will provide"
+				}
+			},
+			"description": "Coimbatore International Airport",
+			"terminal_location_id": 377,
+			"pickup_mode": 1,
+			"landmark": "near the national flag of India"
+		}]
+	}, {
+		"city": "Indore",
+		"city_link_name": "indore",
+		"terminals": [{
+			"name": "Devi Ahilya Bai Holkar Airport (T1)",
+			"id": 44,
+			"lat": "22.729049",
+			"lng": "75.807724",
+			"radius": 0.25,
+			"exception_locations": [{
+				"lat": "22.727815",
+				"lng": "75.804593"
+			}],
+			"distance": 11.6,
+			"fare": 300,
+			"fleet_wait_time": 15,
+			"popup": {
+				"header": "Booking from Airport?",
+				"airport_data": {
+					"header": "Terminal Pickup",
+					"sub_header": "Inform us of your arrival, and we will be there within 15  mins (Not available for One-way bookings)."
+				},
+				"pickup_data": {
+					"header": "I'll pick up the car myself",
+					"sub_header": "Nearest Zoomcar site is $distance km away from the $terminal"
+				},
+				"hd_data": {
+					"header": "Doorstep Delivery",
+					"sub_header": "Car will be delivered at the address you will provide"
+				}
+			},
+			"description": "Indore Airport",
+			"terminal_location_id": 21674,
+			"pickup_mode": 2,
+			"landmark": "Rajwada cutout poster- next to Bageshwar Mandir"
+		}, {
+			"name": "Dev Ahilya Bai Holkar Airport-Indore (T 1)",
+			"id": 48,
+			"lat": "22.729049",
+			"lng": "75.807724",
+			"radius": 0.0,
+			"exception_locations": [],
+			"distance": 7.2,
+			"fare": 500,
+			"fleet_wait_time": 15,
+			"popup": {
+				"header": "Booking from Airport?",
+				"airport_data": {
+					"header": "Terminal Pickup",
+					"sub_header": "Inform us of your arrival, and we will be there within 15  mins (Not available for One-way bookings)."
+				},
+				"pickup_data": {
+					"header": "I'll pick up the car myself",
+					"sub_header": "Nearest Zoomcar site is $distance km away from the $terminal"
+				},
+				"hd_data": {
+					"header": "Doorstep Delivery",
+					"sub_header": "Car will be delivered at the address you will provide"
+				}
+			},
+			"description": "Indore Airport",
+			"terminal_location_id": 892,
+			"pickup_mode": 1,
+			"landmark": " cutout poster- next to Bageshwar Mandir"
+		}]
+	}, {
+		"city": "Jaipur",
+		"city_link_name": "jaipur",
+		"terminals": [{
+			"name": "Terminal (t1)",
+			"id": 12,
+			"lat": "26.828601",
+			"lng": "75.805792",
+			"radius": 0.25,
+			"exception_locations": [{
+				"lat": "26.827974",
+				"lng": "75.805932"
+			}],
+			"distance": 1.3,
+			"fare": 400,
+			"fleet_wait_time": 15,
+			"popup": {
+				"header": "Booking from Airport?",
+				"airport_data": {
+					"header": "Terminal Pickup",
+					"sub_header": "Inform us of your arrival, and we will be there within 15  mins (Not available for One-way bookings)."
+				},
+				"pickup_data": {
+					"header": "I'll pick up the car myself",
+					"sub_header": "Nearest Zoomcar site is $distance km away from the $terminal"
+				},
+				"hd_data": {
+					"header": "Doorstep Delivery",
+					"sub_header": "Car will be delivered at the address you will provide"
+				}
+			},
+			"description": "Jaipur International Airport",
+			"terminal_location_id": 359,
+			"pickup_mode": 2,
+			"landmark": "Exit Gate at Terminal"
+		}]
+	}, {
+		"city": "Vizag",
+		"city_link_name": "vizag",
+		"terminals": [{
+			"name": "Terminal (t1)",
+			"id": 13,
+			"lat": "17.729194",
+			"lng": "83.222917",
+			"radius": 0.25,
+			"exception_locations": [],
+			"distance": 2.3,
+			"fare": 180,
+			"fleet_wait_time": 15,
+			"popup": {
+				"header": "Booking from Airport?",
+				"airport_data": {
+					"header": "Terminal Pickup",
+					"sub_header": "Inform us of your arrival, and we will be there within 15  mins (Not available for One-way bookings)."
+				},
+				"pickup_data": {
+					"header": "I'll pick up the car myself",
+					"sub_header": "Nearest Zoomcar site is $distance km away from the $terminal"
+				},
+				"hd_data": {
+					"header": "Doorstep Delivery",
+					"sub_header": "Car will be delivered at the address you will provide"
+				}
+			},
+			"description": "Visakhapatnam International Airport ",
+			"terminal_location_id": 361,
+			"pickup_mode": 2,
+			"landmark": "Arrival Gate"
+		}]
+	}, {
+		"city": "Nagpur",
+		"city_link_name": "nagpur",
+		"terminals": [{
+			"name": "Nagpur International Airport  (T1)",
+			"id": 66,
+			"lat": "21.090528",
+			"lng": "79.056419",
+			"radius": 0.0,
+			"exception_locations": [],
+			"distance": 6.3,
+			"fare": 500,
+			"fleet_wait_time": 15,
+			"popup": {
+				"header": "Booking from Airport?",
+				"airport_data": {
+					"header": "Terminal Pickup",
+					"sub_header": "Inform us of your arrival, and we will be there within 90 mins Fleet will pick you up and take you to the nearby Zoomcar site, which is at Somalwada where you can start your booking. (Not available for One-way bookings)."
+				},
+				"pickup_data": {
+					"header": "I'll pick up the car myself",
+					"sub_header": "Nearest Zoomcar site is $distance km away from the $terminal"
+				},
+				"hd_data": {
+					"header": "Doorstep Delivery",
+					"sub_header": "Car will be delivered at the address you will provide"
+				}
+			},
+			"description": "Dr. Babasaheb Ambedkar Nagpur International Airport. ",
+			"terminal_location_id": 565,
+			"pickup_mode": 1,
+			"landmark": "Nagpur International Airport Terminal 1"
+		}]
+	}, {
+		"city": "Kochi",
+		"city_link_name": "kochi",
+		"terminals": [{
+			"name": "Cochin International Airport (Int)",
+			"id": 53,
+			"lat": "10.155866",
+			"lng": "76.39236",
+			"radius": 0.0,
+			"exception_locations": [],
+			"distance": 2.7,
+			"fare": 299,
+			"fleet_wait_time": 15,
+			"popup": {
+				"header": "Booking from Airport?",
+				"airport_data": {
+					"header": "Terminal Pickup",
+					"sub_header": "Inform us of your arrival and wait at the parking area opposite to the domestic arrival. We will reach in 15 Mins (Not available for one way bookings)"
+				},
+				"pickup_data": {
+					"header": "I'll pick up the car myself",
+					"sub_header": "Nearest Zoomcar site is $distance km away from the $terminal"
+				},
+				"hd_data": {
+					"header": "Doorstep Delivery",
+					"sub_header": "Car will be delivered at the address you will provide"
+				}
+			},
+			"description": "Cochin International Airport- Domestic \u0026 International",
+			"terminal_location_id": 6782,
+			"pickup_mode": 2,
+			"landmark": "Opp. Domestic Terminal- Parking Area"
+		}]
+	}, {
+		"city": "Udaipur",
+		"city_link_name": "udaipur",
+		"terminals": [{
+			"name": "Maharana Pratap Airport Udaipur (UDR)",
+			"id": 16,
+			"lat": "24.6190702",
+			"lng": "73.8911392",
+			"radius": 0.25,
+			"exception_locations": [],
+			"distance": 20.6,
+			"fare": 1000,
+			"fleet_wait_time": 15,
+			"popup": {
+				"header": "Booking from Airport?",
+				"airport_data": {
+					"header": "Terminal Pickup",
+					"sub_header": "Inform us of your arrival, and we will be there within 15  mins (Not available for One-way bookings)."
+				},
+				"pickup_data": {
+					"header": "I'll pick up the car myself",
+					"sub_header": "Nearest Zoomcar site is $distance km away from the $terminal"
+				},
+				"hd_data": {
+					"header": "Doorstep Delivery",
+					"sub_header": "Car will be delivered at the address you will provide"
+				}
+			},
+			"description": "NH7 Dabok, Udaipur",
+			"terminal_location_id": 1191,
+			"pickup_mode": 2,
+			"landmark": "Terminal Main Gate"
+		}]
+	}, {
+		"city": "Vijayawada",
+		"city_link_name": "vijayawada",
+		"terminals": [{
+			"name": "Vijayawada Airport-Gannavaram (T1)",
+			"id": 51,
+			"lat": "16.523315",
+			"lng": "80.791522",
+			"radius": 0.0,
+			"exception_locations": [],
+			"distance": 14.8,
+			"fare": 500,
+			"fleet_wait_time": 15,
+			"popup": {
+				"header": "Booking from Airport?",
+				"airport_data": {
+					"header": "Terminal Pickup",
+					"sub_header": "Inform us of your arrival before 60 mins, and wait near Indian Flagpost, we will be there within 60  mins (Not available for One-way bookings)."
+				},
+				"pickup_data": {
+					"header": "I'll pick up the car myself",
+					"sub_header": "Nearest Zoomcar site is $distance km away from the $terminal"
+				},
+				"hd_data": {
+					"header": "Doorstep Delivery",
+					"sub_header": "Car will be delivered at the address you will provide"
+				}
+			},
+			"description": "Vijayawada Airport-Gannavaram",
+			"terminal_location_id": 460,
+			"pickup_mode": 2,
+			"landmark": "Near Indian Flag opposite to Terminal"
+		}]
+	}, {
+		"city": "Surat",
+		"city_link_name": "surat",
+		"terminals": [{
+			"name": "Terminal (STV)",
+			"id": 19,
+			"lat": "21.1243011",
+			"lng": "72.7367532",
+			"radius": 0.25,
+			"exception_locations": [{
+				"lat": "21.120041",
+				"lng": "72.743893"
+			}],
+			"distance": 5.1,
+			"fare": 300,
+			"fleet_wait_time": 15,
+			"popup": {
+				"header": "Booking from Airport?",
+				"airport_data": {
+					"header": "Terminal Pickup",
+					"sub_header": "Inform us of your arrival, and we will be there within 15  mins (Not available for One-way bookings)."
+				},
+				"pickup_data": {
+					"header": "I'll pick up the car myself",
+					"sub_header": "Nearest Zoomcar site is $distance km away from the $terminal"
+				},
+				"hd_data": {
+					"header": "Doorstep Delivery",
+					"sub_header": "Car will be delivered at the address you will provide"
+				}
+			},
+			"description": "Surat International Airport",
+			"terminal_location_id": 445,
+			"pickup_mode": 2,
+			"landmark": "Surat Airport Main gate"
+		}]
+	}, {
+		"city": "Siliguri",
+		"city_link_name": "siliguri",
+		"terminals": [{
+			"name": "Bagdogra Airport Site (1)",
+			"id": 56,
+			"lat": "26.694182",
+			"lng": "88.321891",
+			"radius": 0.0,
+			"exception_locations": [],
+			"distance": 0.1,
+			"fare": 500,
+			"fleet_wait_time": 15,
+			"popup": {
+				"header": "Booking from Airport?",
+				"airport_data": {
+					"header": "Terminal Pickup",
+					"sub_header": "Please wait in front of the Central Bank ATM, which is just in front of the airport exit gate, car will be delivered there"
+				},
+				"pickup_data": {
+					"header": "I'll pick up the car myself",
+					"sub_header": "Nearest Zoomcar site is $distance km away from the $terminal"
+				},
+				"hd_data": {
+					"header": "Doorstep Delivery",
+					"sub_header": "Car will be delivered at the address you will provide"
+				}
+			},
+			"description": "Bagdogra Airport",
+			"terminal_location_id": 3501,
+			"pickup_mode": 1,
+			"landmark": "Near Centra Bank of India ATM"
+		}]
+	}, {
+		"city": "Bhopal",
+		"city_link_name": "bhopal",
+		"terminals": [{
+			"name": "Raja Bhoj Airport - Bhopal (T1)",
+			"id": 67,
+			"lat": "23.293323",
+			"lng": "77.337457",
+			"radius": 0.0,
+			"exception_locations": [],
+			"distance": 13.0,
+			"fare": 300,
+			"fleet_wait_time": 15,
+			"popup": {
+				"header": "Booking from Airport?",
+				"airport_data": {
+					"header": "Terminal Pickup",
+					"sub_header": "Inform us of your arrival, and we will be there within 15  mins (Not available for One-way bookings)."
+				},
+				"pickup_data": {
+					"header": "I'll pick up the car myself",
+					"sub_header": "Nearest Zoomcar site is $distance km away from the $terminal"
+				},
+				"hd_data": {
+					"header": "Doorstep Delivery",
+					"sub_header": "Car will be delivered at the address you will provide"
+				}
+			},
+			"description": "Raja Bhoj Airport Bhopal",
+			"terminal_location_id": 983,
+			"pickup_mode": 1,
+			"landmark": "SBI ATM - Arrivals Gate "
+		}]
+	}, {
+		"city": "Lucknow",
+		"city_link_name": "lucknow",
+		"terminals": [{
+			"name": "Lucknow Airport (1)",
+			"id": 17,
+			"lat": "26.765087",
+			"lng": "80.884612",
+			"radius": 0.5,
+			"exception_locations": [],
+			"distance": 3.9,
+			"fare": 499,
+			"fleet_wait_time": 15,
+			"popup": {
+				"header": "Booking from Airport?",
+				"airport_data": {
+					"header": "Terminal Pickup",
+					"sub_header": "Inform us of your arrival, and we will be there within 15  mins (Not available for One-way bookings)."
+				},
+				"pickup_data": {
+					"header": "I'll pick up the car myself",
+					"sub_header": "Nearest Zoomcar site is $distance km away from the $terminal"
+				},
+				"hd_data": {
+					"header": "Doorstep Delivery",
+					"sub_header": "Car will be delivered at the address you will provide"
+				}
+			},
+			"description": "Chaudhary Charan Singh International Airport",
+			"terminal_location_id": 689,
+			"pickup_mode": 1,
+			"landmark": "Terminal 1"
+		}]
+	}, {
+		"city": "Guwahati",
+		"city_link_name": "guwahati",
+		"terminals": [{
+			"name": "Guwahati Airport (GAU)",
+			"id": 18,
+			"lat": "26.105909",
+			"lng": "91.5962",
+			"radius": 0.25,
+			"exception_locations": [{
+				"lat": "26.106473",
+				"lng": "91.586047"
+			}],
+			"distance": 0.5,
+			"fare": 500,
+			"fleet_wait_time": 15,
+			"popup": {
+				"header": "Booking from Airport?",
+				"airport_data": {
+					"header": "Terminal Pickup",
+					"sub_header": "Inform us of your arrival, and we will be there within 15  mins (Not available for One-way bookings)."
+				},
+				"pickup_data": {
+					"header": "I'll pick up the car myself",
+					"sub_header": "Nearest Zoomcar site is $distance km away from the $terminal"
+				},
+				"hd_data": {
+					"header": "Doorstep Delivery",
+					"sub_header": "Car will be delivered at the address you will provide"
+				}
+			},
+			"description": "Lokpriya Gopinath Bordoloi International Airport ",
+			"terminal_location_id": 649,
+			"pickup_mode": 1,
+			"landmark": "Near South Indian Bank ATM"
+		}]
+	}, {
+		"city": "Bhubaneswar",
+		"city_link_name": "bhubaneswar",
+		"terminals": [{
+			"name": "Terminal - 2 - Biju Patnaik International Airport (T2)",
+			"id": 46,
+			"lat": "20.254088",
+			"lng": "85.818249",
+			"radius": 0.0,
+			"exception_locations": [],
+			"distance": 10.7,
+			"fare": 500,
+			"fleet_wait_time": 15,
+			"popup": {
+				"header": "Booking from Airport?",
+				"airport_data": {
+					"header": "Terminal Pickup",
+					"sub_header": "Exit T2 Arrivals and walk towards right for 50mts. Then taken left and walk for 100mt. On your right you can see Ola \u0026 Uber car parking. Cross that and you'll find the Zoomcar Parking."
+				},
+				"pickup_data": {
+					"header": "I'll pick up the car myself",
+					"sub_header": "Nearest Zoomcar site is $distance km away from the $terminal"
+				},
+				"hd_data": {
+					"header": "Doorstep Delivery",
+					"sub_header": "Car will be delivered at the address you will provide"
+				}
+			},
+			"description": "Biju Patnaik International Airport",
+			"terminal_location_id": 788,
+			"pickup_mode": 1,
+			"landmark": "Zoomcar Airport Parking"
+		}]
+	}, {
+		"city": "Ranchi",
+		"city_link_name": "ranchi",
+		"terminals": [{
+			"name": "Birsa Munda Airport Ranchi (1)",
+			"id": 59,
+			"lat": "23.3183687",
+			"lng": "85.3226684",
+			"radius": 0.0,
+			"exception_locations": [],
+			"distance": 8.3,
+			"fare": 500,
+			"fleet_wait_time": 15,
+			"popup": {
+				"header": "Booking from Airport?",
+				"airport_data": {
+					"header": "Terminal Pickup",
+					"sub_header": "Inform us of your arrival and wait near car parking. We will be there within 45 minutes (Not available for One-way bookings)."
+				},
+				"pickup_data": {
+					"header": "I'll pick up the car myself",
+					"sub_header": "Nearest Zoomcar site is $distance km away from the $terminal"
+				},
+				"hd_data": {
+					"header": "Doorstep Delivery",
+					"sub_header": "Car will be delivered at the address you will provide"
+				}
+			},
+			"description": "Birsa Munda Domestic Airport Ranchi",
+			"terminal_location_id": 1464,
+			"pickup_mode": 1,
+			"landmark": "Car Parking Near Car Exit "
+		}]
+	}, {
+		"city": "Patna",
+		"city_link_name": "patna",
+		"terminals": [{
+			"name": "Jay Prakash Narayan International airport, Terminal 1 (T1)",
+			"id": 65,
+			"lat": "25.5963688",
+			"lng": "85.0897141",
+			"radius": 0.0,
+			"exception_locations": [],
+			"distance": 5.1,
+			"fare": 500,
+			"fleet_wait_time": 15,
+			"popup": {
+				"header": "Booking from Airport?",
+				"airport_data": {
+					"header": "Terminal Pickup",
+					"sub_header": "Inform us of your arrival and wait at Public parking 2. We will be there within 45 mins (Not available for One-way bookings)."
+				},
+				"pickup_data": {
+					"header": "I'll pick up the car myself",
+					"sub_header": "Nearest Zoomcar site is $distance km away from the $terminal"
+				},
+				"hd_data": {
+					"header": "Doorstep Delivery",
+					"sub_header": "Car will be delivered at the address you will provide"
+				}
+			},
+			"description": "Jay prakash narayan international airport",
+			"terminal_location_id": 15415,
+			"pickup_mode": 1,
+			"landmark": "Public Parking 2, Patna Airport"
+		}]
+	}, {
+		"city": "Raipur",
+		"city_link_name": "raipur",
+		"terminals": [{
+			"name": "Swami Vivekananda International Airport, Terminal 1 (T1)",
+			"id": 60,
+			"lat": "21.186726",
+			"lng": "81.739024",
+			"radius": 0.0,
+			"exception_locations": [],
+			"distance": 9.2,
+			"fare": 500,
+			"fleet_wait_time": 15,
+			"popup": {
+				"header": "Booking from Airport?",
+				"airport_data": {
+					"header": "Terminal Pickup",
+					"sub_header": "Inform us of your arrival and wait at airport parking near the arrival gate. We will be there within 60 mins (Not available for One-way bookings)."
+				},
+				"pickup_data": {
+					"header": "I'll pick up the car myself",
+					"sub_header": "Nearest Zoomcar site is $distance km away from the $terminal"
+				},
+				"hd_data": {
+					"header": "Doorstep Delivery",
+					"sub_header": "Car will be delivered at the address you will provide"
+				}
+			},
+			"description": "Swami Vivekananda International Airport",
+			"terminal_location_id": 3220,
+			"pickup_mode": 1,
+			"landmark": "Airport parking towards Arrival gate"
+		}]
+	}, {
+		"city": "Jodhpur",
+		"city_link_name": "jodhpur",
+		"terminals": [{
+			"name": "Jodhpur airport (JDH)",
+			"id": 49,
+			"lat": "24.264284",
+			"lng": "73.050804",
+			"radius": 0.0,
+			"exception_locations": [],
+			"distance": 226.7,
+			"fare": 500,
+			"fleet_wait_time": 15,
+			"popup": {
+				"header": "Booking from Airport?",
+				"airport_data": {
+					"header": "Terminal Pickup",
+					"sub_header": "Inform us of your arrival, and we will be there within 15  mins (Not available for One-way bookings)."
+				},
+				"pickup_data": {
+					"header": "I'll pick up the car myself",
+					"sub_header": "Nearest Zoomcar site is $distance km away from the $terminal"
+				},
+				"hd_data": {
+					"header": "Doorstep Delivery",
+					"sub_header": "Car will be delivered at the address you will provide"
+				}
+			},
+			"description": "Civil Airport Road, Air Force Area, Ratanada, Jodhpur, Rajasthan 342011",
+			"terminal_location_id": 2402,
+			"pickup_mode": 1,
+			"landmark": "Terminal Main Gate"
+		}]
+	}, {
+		"city": "Trichy",
+		"city_link_name": "trichy",
+		"terminals": [{
+			"name": "Trichy Airport (Int-Dom)",
+			"id": 57,
+			"lat": "10.759709",
+			"lng": "78.708625",
+			"radius": 0.0,
+			"exception_locations": [],
+			"distance": 7.6,
+			"fare": 299,
+			"fleet_wait_time": 15,
+			"popup": {
+				"header": "Booking from Airport?",
+				"airport_data": {
+					"header": "Terminal Pickup",
+					"sub_header": "Pickup is Lakshmi Villas Bank ATM. Drop point is Nanthu Cafe"
+				},
+				"pickup_data": {
+					"header": "I'll pick up the car myself",
+					"sub_header": "Nearest Zoomcar site is $distance km away from the $terminal"
+				},
+				"hd_data": {
+					"header": "Doorstep Delivery",
+					"sub_header": "Car will be delivered at the address you will provide"
+				}
+			},
+			"description": "Thiruchirappally Airport",
+			"terminal_location_id": 5252,
+			"pickup_mode": 1,
+			"landmark": "Lakshmi Villas Bank ATM"
+		}]
+	}],
+	"popup": {
+		"header": "Booking from Airport?",
+		"airport_data": {
+			"header": "Terminal Pickup",
+			"sub_header": "Inform us of your arrival, and we will be there within $fleet_wait_time mins (Not available for One-way bookings)."
+		},
+		"pickup_data": {
+			"header": "I'll pick up the car myself",
+			"sub_header": "Nearest Zoomcar site is $distance km away from the $terminal"
+		},
+		"hd_data": {
+			"header": "Doorstep Delivery",
+			"sub_header": "Car will be delivered at the address you will provide"
+		}
+	},
+	"msg": "success"
+}
