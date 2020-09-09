@@ -1,3 +1,6 @@
+from utils.cart import from_frontend
+from models.user import Address
+from pydantic import BaseModel
 from motor.motor_asyncio import AsyncIOMotorClient
 from datetime import datetime, timedelta
 from typing import Optional
@@ -8,31 +11,11 @@ from passlib.context import CryptContext
 import uvicorn
 from bson import ObjectId
 from utils.config import MONGODB_URL, SECRET_KEY, ALGORITHM, ACCESS_TOKEN_EXPIRE_MINUTES
-from db.mongodb import get_user, db
+from db.mongodb import db
 from src import app
 from models.user import UserInDB, User, Token, TokenData
-
-pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
-oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
-
-
-def verify_password(plain_password, hashed_password):
-    return pwd_context.verify(plain_password, hashed_password)
-
-
-def get_password_hash(password):
-    return pwd_context.hash(password)
-
-
-def create_access_token(data: dict, expires_delta: Optional[timedelta] = None):
-    to_encode = data.copy()
-    if expires_delta:
-        expire = datetime.utcnow() + expires_delta
-    else:
-        expire = datetime.utcnow() + timedelta(minutes=15)
-    to_encode.update({"exp": expire})
-    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
-    return encoded_jwt
+from utils.user import get_user, get_current_user
+from utils.auth import verify_password, get_password_hash, create_access_token
 
 
 async def authenticate_user(username: str, password: str):
@@ -41,27 +24,6 @@ async def authenticate_user(username: str, password: str):
         return False
     if not verify_password(password, user.hashed_password):
         return False
-    return user
-
-
-async def get_current_user(token: str = Depends(oauth2_scheme)):
-    print('get_current_usr')
-    credentials_exception = HTTPException(
-        status_code=status.HTTP_401_UNAUTHORIZED,
-        detail="Could not validate credentials",
-        headers={"WWW-Authenticate": "Bearer"},
-    )
-    try:
-        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
-        username: str = payload.get("sub")
-        if username is None:
-            raise credentials_exception
-        token_data = TokenData(username=username)
-    except JWTError:
-        raise credentials_exception
-    user = await get_user(token_data.username)
-    if user is None:
-        raise credentials_exception
     return user
 
 
@@ -102,6 +64,16 @@ async def read_own_items(current_user: User = Depends(get_current_active_user)):
 async def namaskaar(cur_user: User = Depends(get_current_active_user)):
     return {"status": "hello world"}
 
+
+@app.get('/address')
+async def get_options():
+    return {"options": True}
+
+
+@app.post('/address')
+async def information(address: Address):
+    from_frontend(address)
+    return {"Status": "in_progress"}
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000, debug=True)

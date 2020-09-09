@@ -5,18 +5,15 @@
 - [ ] Deployment
   - [ ] Docker
   - [ ] GCP Cloud Run
-
-https://fastapi.tiangolo.com/
-Login - https://fastapi.tiangolo.com/tutorial/security/oauth2-jwt/
-
-https://fastapi.tiangolo.com/tutorial/security/
-https://motor.readthedocs.io/en/stable/
-https://github.com/markqiu/fastapi-mongodb-realworld-example-app/tree/master/app
+- [ ] Cart
+- [ ] Promocode
 
 https://fastapi.tiangolo.com/advanced/nosql-databases/#define-a-constant-to-use-as-a-document-type
 
+Cities - https://api.zoomcar.com/v4/cities?platform=web
+Airport - https://api.zoomcar.com/v4/airport_terminals?platform=web
 ## Run
-> uvicorn app:app --host 0.0.0.0 --port 8000 --reload
+> uvicorn src.app:app --host 0.0.0.0 --port 8000 --reload
 
 ## Protected Route
 @app.get("/items/")
@@ -34,3 +31,10 @@ collection = db["users"]
 https://frankie567.github.io/fastapi-users/configuration/databases/mongodb/
 http://0.0.0.0:8000/docs
 http://0.0.0.0:8000/redoc
+
+
+# Google Maps
+https://maps.googleapis.com/maps/api/place/textsearch/json?query=Delhi&type=airport&key=AIzaSyAGNFsvRxrPWxm3at6ub4Ohjr98EqqTMUs
+https://maps.googleapis.com/maps/api/place/textsearch/json?query=Delhi&type=train_station&key=AIzaSyAGNFsvRxrPWxm3at6ub4Ohjr98EqqTMUs
+
+response.results[1].name
