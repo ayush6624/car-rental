@@ -2,6 +2,7 @@ from motor.motor_asyncio import AsyncIOMotorClient
 from utils.config import MONGODB_URL, MAX_CONNECTIONS_COUNT, MIN_CONNECTIONS_COUNT
 from models.user import UserInDB
 from src import app
+from typing import Optional
 
 
 class MongoDB:
@@ -50,3 +51,17 @@ async def get_user(name) -> UserInDB:
         return UserInDB(**row)
     else:
         return None
+
+
+async def get_locations(city: Optional[str] = None):
+    client = await get_nosql_db()
+    db = client["car_rental"]
+    collection = db.locations
+    if city:
+        row = collection.find({"city": city})
+    else:
+        row = collection.find({})
+    row = await row.to_list(length=100)
+    for i in row:
+        i['_id'] = str(i['_id'])
+    return {"locations": row}

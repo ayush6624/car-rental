@@ -1,3 +1,4 @@
+from db.mongodb import get_locations
 from utils.cart import from_frontend
 from models.user import Address
 from pydantic import BaseModel
@@ -66,14 +67,13 @@ async def namaskaar(cur_user: User = Depends(get_current_active_user)):
 
 
 @app.get('/address')
-async def get_options():
-    return {"options": True}
+async def get_options(city: Optional[str] = None):
+    if city:
+        data = await get_locations(city)
+    else:
+        data = await get_locations()
+    return data
 
-
-@app.post('/address')
-async def information(address: Address):
-    from_frontend(address)
-    return {"Status": "in_progress"}
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000, debug=True)
