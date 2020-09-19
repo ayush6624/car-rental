@@ -1,98 +1,2595 @@
 {
-    "html_attributions": [],
-    "results": [
+    "status": 1,
+    "cities": [
         {
-            "business_status": "OPERATIONAL",
-            "formatted_address": "Bhavbhuti Marg, Ratan Lal Market, Kamla Market, Ajmeri Gate, New Delhi, Delhi 110006, India",
-            "geometry": {
-                "location": {
-                    "lat": 28.6428915,
-                    "lng": 77.2190894
+            "name": "Indore",
+            "link_name": "indore",
+            "hd_enabled": true,
+            "hd_fee": 0,
+            "lat": "22.715865057588953",
+            "lng": "75.8576962351799",
+            "popular": false,
+            "one_way_enabled": true,
+            "id": "79100c61-556a-457a-9718-29a50b464888",
+            "phone": "08068976666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/73152f43661d0e17c9c544bb5d69da80d62c7abc.png?1497538181",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": true,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
                 },
-                "viewport": {
-                    "northeast": {
-                        "lat": 28.64424012989272,
-                        "lng": 77.22043097989271
-                    },
-                    "southwest": {
-                        "lat": 28.64154047010728,
-                        "lng": 77.21773132010728
+                "no_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 8
+                },
+                "search_default": "NO_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": [
+                {
+                    "name": "normal",
+                    "header": "Schedule a Round Trip",
+                    "sub_header": "Outstation Road Trips, Visiting Temples, Shopping Malls etc.",
+                    "default": true,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/a8f2fbd8d5608fd6890020e267a76f84b15f4d82.png?1594715131",
+                    "redirect_page": "ROUND_TRIP",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "one_way",
+                    "header": "One-Way to Nearby Cities",
+                    "sub_header": "Drop off in a nearby city after a one-way trip.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/9cb4c0cb2f3656a765db302650c5f867bb31e06a.png?1594715157",
+                    "redirect_page": "ONE_WAY",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "zap",
+                    "header": "Subscribe to a Personal Car",
+                    "sub_header": "Zoomcar subscription from 1 month upto 2 years.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/dacf266bd4d97a6c126e085de3b062b4049de891.png?1594715169",
+                    "redirect_page": "WEBPAGE",
+                    "metadata": {
+                        "url": "https://zoomcar.com/zap/subscribe",
+                        "title": "Subscribe to a Personal Car"
                     }
                 }
-            },
-            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/train-71.png",
-            "name": "New Delhi Railway Station",
-            "photos": [
-                {
-                    "height": 3456,
-                    "html_attributions": [
-                        "\u003ca href=\"https://maps.google.com/maps/contrib/104122929899581199542\"\u003eShubham Mishra\u003c/a\u003e"
-                    ],
-                    "photo_reference": "CkQ0AAAAGdRf8SnDfmw4bKn5aQNd22HHHage5LUuwtjUqdkNdOQbsfufIcr7XCrpWGjDnlV7vtdKiI_4031zNQCHsSBSjRIQJ8nM9mDiKsKYQ6MrGhY76hoUQFB38LuJkZOV3oFav4DCVS3-Scg",
-                    "width": 4608
-                }
-            ],
-            "place_id": "ChIJBXs6ETz9DDkRFllm4f46kfg",
-            "plus_code": {
-                "compound_code": "J6V9+5J New Delhi, Delhi",
-                "global_code": "7JWVJ6V9+5J"
-            },
-            "rating": 4,
-            "reference": "ChIJBXs6ETz9DDkRFllm4f46kfg",
-            "types": [
-                "train_station",
-                "transit_station",
-                "point_of_interest",
-                "establishment"
-            ],
-            "user_ratings_total": 21541
+            ]
         },
         {
-            "business_status": "OPERATIONAL",
-            "formatted_address": "Mori Gate, New Delhi, Delhi 110006, India",
-            "geometry": {
-                "location": {
-                    "lat": 28.6609621,
-                    "lng": 77.2276794
+            "name": "Coimbatore",
+            "link_name": "coimbatore",
+            "hd_enabled": true,
+            "hd_fee": 199,
+            "lat": "11.103620579499848",
+            "lng": "76.92386627197266",
+            "popular": false,
+            "one_way_enabled": true,
+            "id": "4f3945d2-40b7-44d8-978f-2f71d56b1c9e",
+            "phone": "08068976666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/73152f43661d0e17c9c544bb5d69da80d62c7abc.png?1497538181",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": true,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
                 },
-                "viewport": {
-                    "northeast": {
-                        "lat": 28.66361275,
-                        "lng": 77.23012019999999
-                    },
-                    "southwest": {
-                        "lat": 28.65956334999999,
-                        "lng": 77.2224058
+                "no_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 8
+                },
+                "search_default": "NO_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": [
+                {
+                    "name": "normal",
+                    "header": "Schedule a Round Trip",
+                    "sub_header": "Outstation Road Trips, Visiting Temples, Shopping Malls etc.",
+                    "default": true,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/a8f2fbd8d5608fd6890020e267a76f84b15f4d82.png?1594715131",
+                    "redirect_page": "ROUND_TRIP",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "one_way",
+                    "header": "One-Way to Nearby Cities",
+                    "sub_header": "Drop off in a nearby city after a one-way trip.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/9cb4c0cb2f3656a765db302650c5f867bb31e06a.png?1594715157",
+                    "redirect_page": "ONE_WAY",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "zap",
+                    "header": "Subscribe to a Personal Car",
+                    "sub_header": "Zoomcar subscription from 1 month upto 2 years.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/dacf266bd4d97a6c126e085de3b062b4049de891.png?1594715169",
+                    "redirect_page": "WEBPAGE",
+                    "metadata": {
+                        "url": "https://zoomcar.com/zap/subscribe",
+                        "title": "Subscribe to a Personal Car"
                     }
                 }
+            ]
+        },
+        {
+            "name": "Varanasi",
+            "link_name": "varanasi",
+            "hd_enabled": true,
+            "hd_fee": 300,
+            "lat": "25.315586867277116",
+            "lng": "82.97362677252738",
+            "popular": false,
+            "one_way_enabled": false,
+            "id": "f7c0b1e4-64e1-4bb1-a193-eab26ed1705a",
+            "phone": "18601239666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/73152f43661d0e17c9c544bb5d69da80d62c7abc.png?1497538181",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": false,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": false,
+                    "min_booking_hours": 0
+                },
+                "search_default": "WITH_FUEL"
             },
-            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/train-71.png",
-            "name": "Delhi Junction",
-            "photos": [
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": []
+        },
+        {
+            "name": "Ludhiana",
+            "link_name": "ludhiana",
+            "hd_enabled": false,
+            "hd_fee": 300,
+            "lat": "30.958768570779846",
+            "lng": "75.82986831665039",
+            "popular": false,
+            "one_way_enabled": false,
+            "id": "417ee8e2-16b7-4d8e-a5df-74722f7f4c6e",
+            "phone": "18601239666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/73152f43661d0e17c9c544bb5d69da80d62c7abc.png?1497538181",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": false,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 8
+                },
+                "search_default": "NO_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": [
                 {
-                    "height": 806,
-                    "html_attributions": [
-                        "\u003ca href=\"https://maps.google.com/maps/contrib/106724362175719530931\"\u003eKrishna bind\u003c/a\u003e"
-                    ],
-                    "photo_reference": "CkQ0AAAADXuNj2GKkb0MqDN-Hoc6m_0Bttw83y_XBU2GJRvPctgGiHfgh6R6h1blkEATEsIc3O7z8h6BFEut-YVaxIjmBBIQ_TVIuaVRUAiiqcYyI2RoIRoUfz0_Eo8_ooqo12igg6BYh0dNv7o",
-                    "width": 1080
+                    "header": "Schedule a Round Trip",
+                    "sub_header": "Outstation Road Trips, Visiting Temples, Shopping Malls etc.",
+                    "default": true,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/a8f2fbd8d5608fd6890020e267a76f84b15f4d82.png?1594715131",
+                    "redirect_page": "ROUND_TRIP",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
                 }
-            ],
-            "place_id": "ChIJ03AFdA_9DDkRuW2vyViPeAs",
-            "plus_code": {
-                "compound_code": "M66H+93 New Delhi, Delhi",
-                "global_code": "7JWVM66H+93"
+            ]
+        },
+        {
+            "name": "Hyderabad",
+            "link_name": "hyderabad",
+            "hd_enabled": true,
+            "hd_fee": 499,
+            "lat": "17.435165651384928",
+            "lng": "78.39293628931046",
+            "popular": true,
+            "one_way_enabled": true,
+            "id": "a5d8ba58-76d1-4314-a965-0bf4f3a010fa",
+            "phone": "08068976666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/photos/original/ec01720d5e98455a7607a3c18d6c3804e65f9299.png?1497538617",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": true,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 8
+                },
+                "search_default": "NO_FUEL"
             },
-            "rating": 3.8,
-            "reference": "ChIJ03AFdA_9DDkRuW2vyViPeAs",
-            "types": [
-                "train_station",
-                "transit_station",
-                "point_of_interest",
-                "establishment"
-            ],
-            "user_ratings_total": 6657
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": [
+                {
+                    "name": "normal",
+                    "header": "Schedule a Round Trip",
+                    "sub_header": "Outstation Road Trips, Visiting Temples, Shopping Malls etc.",
+                    "default": true,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/a8f2fbd8d5608fd6890020e267a76f84b15f4d82.png?1594715131",
+                    "redirect_page": "ROUND_TRIP",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "one_way",
+                    "header": "One-Way to Nearby Cities",
+                    "sub_header": "Drop off in a nearby city after a one-way trip.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/9cb4c0cb2f3656a765db302650c5f867bb31e06a.png?1594715157",
+                    "redirect_page": "ONE_WAY",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "zap",
+                    "header": "Subscribe to a Personal Car",
+                    "sub_header": "Zoomcar subscription from 1 month upto 2 years.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/dacf266bd4d97a6c126e085de3b062b4049de891.png?1594715169",
+                    "redirect_page": "WEBPAGE",
+                    "metadata": {
+                        "url": "https://zoomcar.com/zap/subscribe",
+                        "title": "Subscribe to a Personal Car"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Manipal",
+            "link_name": "manipal",
+            "hd_enabled": false,
+            "hd_fee": 300,
+            "lat": "13.348869304677473",
+            "lng": "74.7820258140564",
+            "popular": false,
+            "one_way_enabled": false,
+            "id": "f2979946-754f-4e3e-99cc-567ed7887d23",
+            "phone": "18601239666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/73152f43661d0e17c9c544bb5d69da80d62c7abc.png?1497538181",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": false,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": false,
+                    "min_booking_hours": 0
+                },
+                "search_default": "WITH_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": []
+        },
+        {
+            "name": "Mysore",
+            "link_name": "mysore",
+            "hd_enabled": true,
+            "hd_fee": 199,
+            "lat": "12.305118866797502",
+            "lng": "76.64401531219482",
+            "popular": false,
+            "one_way_enabled": true,
+            "id": "ff769f8f-f693-44d9-a071-d29fc5a39201",
+            "phone": "08068976666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/73152f43661d0e17c9c544bb5d69da80d62c7abc.png?1497538181",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": true,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 8
+                },
+                "search_default": "NO_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": [
+                {
+                    "name": "normal",
+                    "header": "Schedule a Round Trip",
+                    "sub_header": "Outstation Road Trips, Visiting Temples, Shopping Malls etc.",
+                    "default": true,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/a8f2fbd8d5608fd6890020e267a76f84b15f4d82.png?1594715131",
+                    "redirect_page": "ROUND_TRIP",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "one_way",
+                    "header": "One-Way to Nearby Cities",
+                    "sub_header": "Drop off in a nearby city after a one-way trip.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/9cb4c0cb2f3656a765db302650c5f867bb31e06a.png?1594715157",
+                    "redirect_page": "ONE_WAY",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "zap",
+                    "header": "Subscribe to a Personal Car",
+                    "sub_header": "Zoomcar subscription from 1 month upto 2 years.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/dacf266bd4d97a6c126e085de3b062b4049de891.png?1594715169",
+                    "redirect_page": "WEBPAGE",
+                    "metadata": {
+                        "url": "https://zoomcar.com/zap/subscribe",
+                        "title": "Subscribe to a Personal Car"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Gurugram",
+            "link_name": "gurugram",
+            "hd_enabled": false,
+            "hd_fee": 300,
+            "lat": "28.630133451537027",
+            "lng": "77.08165804164992",
+            "popular": false,
+            "one_way_enabled": false,
+            "id": "21fc24b8-c2e2-488a-98a7-5d028ce2b6b3",
+            "phone": "18601239666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/73152f43661d0e17c9c544bb5d69da80d62c7abc.png?1497538181",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": false,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": false,
+                    "min_booking_hours": 0
+                },
+                "search_default": "WITH_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": []
+        },
+        {
+            "name": "Chennai",
+            "link_name": "chennai",
+            "hd_enabled": true,
+            "hd_fee": 299,
+            "lat": "13.029645271172528",
+            "lng": "79.92210388183594",
+            "popular": true,
+            "one_way_enabled": true,
+            "id": "743fe1cf-ed0f-4ea5-b06d-049d7420509b",
+            "phone": "08068976666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/photos/original/72146518feb0424f786d36533dbacb4eaa22ea82.png?1497538586",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": true,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 8
+                },
+                "search_default": "NO_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": [
+                {
+                    "name": "normal",
+                    "header": "Schedule a Round Trip",
+                    "sub_header": "Outstation Road Trips, Visiting Temples, Shopping Malls etc.",
+                    "default": true,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/a8f2fbd8d5608fd6890020e267a76f84b15f4d82.png?1594715131",
+                    "redirect_page": "ROUND_TRIP",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "one_way",
+                    "header": "One-Way to Nearby Cities",
+                    "sub_header": "Drop off in a nearby city after a one-way trip.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/9cb4c0cb2f3656a765db302650c5f867bb31e06a.png?1594715157",
+                    "redirect_page": "ONE_WAY",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "zap",
+                    "header": "Subscribe to a Personal Car",
+                    "sub_header": "Zoomcar subscription from 1 month upto 2 years.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/dacf266bd4d97a6c126e085de3b062b4049de891.png?1594715169",
+                    "redirect_page": "WEBPAGE",
+                    "metadata": {
+                        "url": "https://zoomcar.com/zap/subscribe",
+                        "title": "Subscribe to a Personal Car"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Delhi NCR",
+            "link_name": "delhi",
+            "hd_enabled": true,
+            "hd_fee": 399,
+            "lat": "28.629658043848902",
+            "lng": "77.08167470991611",
+            "popular": true,
+            "one_way_enabled": true,
+            "id": "ace71b2e-5756-4838-940d-3dd8d3cfacdf",
+            "phone": "08068976666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/photos/original/5b9f025a2b89481a148d60ecec80f6f465491815.png?1497538509",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": true,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 8
+                },
+                "search_default": "NO_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": [
+                {
+                    "name": "normal",
+                    "header": "Schedule a Round Trip",
+                    "sub_header": "Outstation Road Trips, Visiting Temples, Shopping Malls etc.",
+                    "default": true,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/a8f2fbd8d5608fd6890020e267a76f84b15f4d82.png?1594715131",
+                    "redirect_page": "ROUND_TRIP",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "one_way",
+                    "header": "One-Way to Nearby Cities",
+                    "sub_header": "Drop off in a nearby city after a one-way trip.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/9cb4c0cb2f3656a765db302650c5f867bb31e06a.png?1594715157",
+                    "redirect_page": "ONE_WAY",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "zap",
+                    "header": "Subscribe to a Personal Car",
+                    "sub_header": "Zoomcar subscription from 1 month upto 2 years.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/dacf266bd4d97a6c126e085de3b062b4049de891.png?1594715169",
+                    "redirect_page": "WEBPAGE",
+                    "metadata": {
+                        "url": "https://zoomcar.com/zap/subscribe",
+                        "title": "Subscribe to a Personal Car"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Vadodara",
+            "link_name": "vadodara",
+            "hd_enabled": true,
+            "hd_fee": 199,
+            "lat": "22.318941833065775",
+            "lng": "73.18820357322693",
+            "popular": true,
+            "one_way_enabled": true,
+            "id": "5a58b97b-8284-4965-973a-455c43d73d2f",
+            "phone": "08068976666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/73152f43661d0e17c9c544bb5d69da80d62c7abc.png?1497538181",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": true,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 8
+                },
+                "search_default": "NO_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": [
+                {
+                    "name": "normal",
+                    "header": "Schedule a Round Trip",
+                    "sub_header": "Outstation Road Trips, Visiting Temples, Shopping Malls etc.",
+                    "default": true,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/a8f2fbd8d5608fd6890020e267a76f84b15f4d82.png?1594715131",
+                    "redirect_page": "ROUND_TRIP",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "one_way",
+                    "header": "One-Way to Nearby Cities",
+                    "sub_header": "Drop off in a nearby city after a one-way trip.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/9cb4c0cb2f3656a765db302650c5f867bb31e06a.png?1594715157",
+                    "redirect_page": "ONE_WAY",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Goa",
+            "link_name": "goa",
+            "hd_enabled": true,
+            "hd_fee": 0,
+            "lat": "15.5460659",
+            "lng": "73.7644301",
+            "popular": false,
+            "one_way_enabled": false,
+            "id": "ed622188-f118-457b-a7c2-f9de29fe1f00",
+            "phone": "18601239666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/73152f43661d0e17c9c544bb5d69da80d62c7abc.png?1497538181",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": false,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": false,
+                    "min_booking_hours": 0
+                },
+                "search_default": "WITH_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": []
+        },
+        {
+            "name": "Siliguri",
+            "link_name": "siliguri",
+            "hd_enabled": false,
+            "hd_fee": null,
+            "lat": "26.937986749209887",
+            "lng": "88.32904815673828",
+            "popular": false,
+            "one_way_enabled": true,
+            "id": "e5309521-6054-443b-9aa3-a135af12de88",
+            "phone": "08068976666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/73152f43661d0e17c9c544bb5d69da80d62c7abc.png?1497538181",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": true,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 8
+                },
+                "search_default": "NO_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": [
+                {
+                    "name": "normal",
+                    "header": "Schedule a Round Trip",
+                    "sub_header": "Outstation Road Trips, Visiting Temples, Shopping Malls etc.",
+                    "default": true,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/a8f2fbd8d5608fd6890020e267a76f84b15f4d82.png?1594715131",
+                    "redirect_page": "ROUND_TRIP",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "one_way",
+                    "header": "One-Way to Nearby Cities",
+                    "sub_header": "Drop off in a nearby city after a one-way trip.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/9cb4c0cb2f3656a765db302650c5f867bb31e06a.png?1594715157",
+                    "redirect_page": "ONE_WAY",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Pune",
+            "link_name": "pune",
+            "hd_enabled": true,
+            "hd_fee": 199,
+            "lat": "18.547975570583468",
+            "lng": "73.7347412109375",
+            "popular": true,
+            "one_way_enabled": true,
+            "id": "c4f90a78-f07e-407f-bcb7-77a899f4665b",
+            "phone": "08068976666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/photos/original/c198e0443ff4edf7f90a8d84dd6cf922de4f13eb.png?1497538483",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": true,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 8
+                },
+                "search_default": "NO_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": [
+                {
+                    "name": "normal",
+                    "header": "Schedule a Round Trip",
+                    "sub_header": "Outstation Road Trips, Visiting Temples, Shopping Malls etc.",
+                    "default": true,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/a8f2fbd8d5608fd6890020e267a76f84b15f4d82.png?1594715131",
+                    "redirect_page": "ROUND_TRIP",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "one_way",
+                    "header": "One-Way to Nearby Cities",
+                    "sub_header": "Drop off in a nearby city after a one-way trip.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/9cb4c0cb2f3656a765db302650c5f867bb31e06a.png?1594715157",
+                    "redirect_page": "ONE_WAY",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "zap",
+                    "header": "Subscribe to a Personal Car",
+                    "sub_header": "Zoomcar subscription from 1 month upto 2 years.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/dacf266bd4d97a6c126e085de3b062b4049de891.png?1594715169",
+                    "redirect_page": "WEBPAGE",
+                    "metadata": {
+                        "url": "https://zoomcar.com/zap/subscribe",
+                        "title": "Subscribe to a Personal Car"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Bhubaneswar",
+            "link_name": "bhubaneswar",
+            "hd_enabled": true,
+            "hd_fee": 300,
+            "lat": "20.285384944611792",
+            "lng": "85.80813243985176",
+            "popular": false,
+            "one_way_enabled": true,
+            "id": "a0325fd8-b4f7-46af-acdb-f7714982f578",
+            "phone": "08068976666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/73152f43661d0e17c9c544bb5d69da80d62c7abc.png?1497538181",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": true,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 8
+                },
+                "search_default": "NO_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": [
+                {
+                    "name": "normal",
+                    "header": "Schedule a Round Trip",
+                    "sub_header": "Outstation Road Trips, Visiting Temples, Shopping Malls etc.",
+                    "default": true,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/a8f2fbd8d5608fd6890020e267a76f84b15f4d82.png?1594715131",
+                    "redirect_page": "ROUND_TRIP",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "zap",
+                    "header": "Subscribe to a Personal Car",
+                    "sub_header": "Zoomcar subscription from 1 month upto 2 years.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/dacf266bd4d97a6c126e085de3b062b4049de891.png?1594715169",
+                    "redirect_page": "WEBPAGE",
+                    "metadata": {
+                        "url": "https://zoomcar.com/zap/subscribe",
+                        "title": "Subscribe to a Personal Car"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Hubli",
+            "link_name": "hubli",
+            "hd_enabled": true,
+            "hd_fee": 399,
+            "lat": "15.348558581369899",
+            "lng": "75.14440298080444",
+            "popular": false,
+            "one_way_enabled": true,
+            "id": "9562f5e7-4b26-4f9d-af76-b7d6c135d558",
+            "phone": "08068976666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/73152f43661d0e17c9c544bb5d69da80d62c7abc.png?1497538181",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": false,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 8
+                },
+                "search_default": "NO_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": [
+                {
+                    "name": "normal",
+                    "header": "Schedule a Round Trip",
+                    "sub_header": "Outstation Road Trips, Visiting Temples, Shopping Malls etc.",
+                    "default": true,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/a8f2fbd8d5608fd6890020e267a76f84b15f4d82.png?1594715131",
+                    "redirect_page": "ROUND_TRIP",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "zap",
+                    "header": "Subscribe to a Personal Car",
+                    "sub_header": "Zoomcar subscription from 1 month upto 2 years.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/dacf266bd4d97a6c126e085de3b062b4049de891.png?1594715169",
+                    "redirect_page": "WEBPAGE",
+                    "metadata": {
+                        "url": "https://zoomcar.com/zap/subscribe",
+                        "title": "Subscribe to a Personal Car"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Agra",
+            "link_name": "agra",
+            "hd_enabled": false,
+            "hd_fee": 300,
+            "lat": "27.175552864226916",
+            "lng": "78.01499761641026",
+            "popular": false,
+            "one_way_enabled": false,
+            "id": "7fb37169-3157-41fe-a6de-eee301f445fb",
+            "phone": "18601239666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/73152f43661d0e17c9c544bb5d69da80d62c7abc.png?1497538181",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": false,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": false,
+                    "min_booking_hours": 0
+                },
+                "search_default": "WITH_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": []
+        },
+        {
+            "name": "Trichy",
+            "link_name": "trichy",
+            "hd_enabled": true,
+            "hd_fee": 199,
+            "lat": "10.773026889484848",
+            "lng": "78.71510450400262",
+            "popular": false,
+            "one_way_enabled": true,
+            "id": "cfaa3ffd-8eef-476d-a347-65288ee7d42d",
+            "phone": "08068976666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/73152f43661d0e17c9c544bb5d69da80d62c7abc.png?1497538181",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": true,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 8
+                },
+                "search_default": "NO_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": [
+                {
+                    "name": "normal",
+                    "header": "Schedule a Round Trip",
+                    "sub_header": "Outstation Road Trips, Visiting Temples, Shopping Malls etc.",
+                    "default": true,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/a8f2fbd8d5608fd6890020e267a76f84b15f4d82.png?1594715131",
+                    "redirect_page": "ROUND_TRIP",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "one_way",
+                    "header": "One-Way to Nearby Cities",
+                    "sub_header": "Drop off in a nearby city after a one-way trip.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/9cb4c0cb2f3656a765db302650c5f867bb31e06a.png?1594715157",
+                    "redirect_page": "ONE_WAY",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Vizag",
+            "link_name": "vizag",
+            "hd_enabled": true,
+            "hd_fee": 299,
+            "lat": "17.683278409289212",
+            "lng": "83.2024884223938",
+            "popular": false,
+            "one_way_enabled": true,
+            "id": "9d98f3c1-1a29-4a8e-ab3a-04cb7ad23972",
+            "phone": "08068976666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/73152f43661d0e17c9c544bb5d69da80d62c7abc.png?1497538181",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": true,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 8
+                },
+                "search_default": "NO_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": [
+                {
+                    "name": "normal",
+                    "header": "Schedule a Round Trip",
+                    "sub_header": "Outstation Road Trips, Visiting Temples, Shopping Malls etc.",
+                    "default": true,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/a8f2fbd8d5608fd6890020e267a76f84b15f4d82.png?1594715131",
+                    "redirect_page": "ROUND_TRIP",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "one_way",
+                    "header": "One-Way to Nearby Cities",
+                    "sub_header": "Drop off in a nearby city after a one-way trip.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/9cb4c0cb2f3656a765db302650c5f867bb31e06a.png?1594715157",
+                    "redirect_page": "ONE_WAY",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "zap",
+                    "header": "Subscribe to a Personal Car",
+                    "sub_header": "Zoomcar subscription from 1 month upto 2 years.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/dacf266bd4d97a6c126e085de3b062b4049de891.png?1594715169",
+                    "redirect_page": "WEBPAGE",
+                    "metadata": {
+                        "url": "https://zoomcar.com/zap/subscribe",
+                        "title": "Subscribe to a Personal Car"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Nashik",
+            "link_name": "nashik",
+            "hd_enabled": false,
+            "hd_fee": 199,
+            "lat": "20.005372675894698",
+            "lng": "73.76559992536659",
+            "popular": false,
+            "one_way_enabled": true,
+            "id": "e745e954-2f9e-4c13-84e4-04c4ce4603c1",
+            "phone": "08068976666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/73152f43661d0e17c9c544bb5d69da80d62c7abc.png?1497538181",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": true,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 8
+                },
+                "search_default": "NO_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": [
+                {
+                    "name": "normal",
+                    "header": "Schedule a Round Trip",
+                    "sub_header": "Outstation Road Trips, Visiting Temples, Shopping Malls etc.",
+                    "default": true,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/a8f2fbd8d5608fd6890020e267a76f84b15f4d82.png?1594715131",
+                    "redirect_page": "ROUND_TRIP",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Chandigarh",
+            "link_name": "chandigarh",
+            "hd_enabled": true,
+            "hd_fee": 299,
+            "lat": "30.685163937659564",
+            "lng": "76.53694152832031",
+            "popular": true,
+            "one_way_enabled": true,
+            "id": "502af13b-3856-488e-910f-086153791d98",
+            "phone": "08068976666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/photos/original/2c335cd7b3bea26f8ee2e399572e7b1bab86a921.png?1497538647",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": true,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 8
+                },
+                "search_default": "NO_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": [
+                {
+                    "name": "normal",
+                    "header": "Schedule a Round Trip",
+                    "sub_header": "Outstation Road Trips, Visiting Temples, Shopping Malls etc.",
+                    "default": true,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/a8f2fbd8d5608fd6890020e267a76f84b15f4d82.png?1594715131",
+                    "redirect_page": "ROUND_TRIP",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "one_way",
+                    "header": "One-Way to Nearby Cities",
+                    "sub_header": "Drop off in a nearby city after a one-way trip.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/9cb4c0cb2f3656a765db302650c5f867bb31e06a.png?1594715157",
+                    "redirect_page": "ONE_WAY",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "zap",
+                    "header": "Subscribe to a Personal Car",
+                    "sub_header": "Zoomcar subscription from 1 month upto 2 years.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/dacf266bd4d97a6c126e085de3b062b4049de891.png?1594715169",
+                    "redirect_page": "WEBPAGE",
+                    "metadata": {
+                        "url": "https://zoomcar.com/zap/subscribe",
+                        "title": "Subscribe to a Personal Car"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Udupi-Manipal",
+            "link_name": "udupi",
+            "hd_enabled": true,
+            "hd_fee": 399,
+            "lat": "13.332662226210886",
+            "lng": "74.73627770747271",
+            "popular": false,
+            "one_way_enabled": true,
+            "id": "88340a12-c27a-4156-8afa-b1b1b74e7ca0",
+            "phone": "08068976666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/73152f43661d0e17c9c544bb5d69da80d62c7abc.png?1497538181",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": true,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 8
+                },
+                "search_default": "NO_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": [
+                {
+                    "name": "normal",
+                    "header": "Schedule a Round Trip",
+                    "sub_header": "Outstation Road Trips, Visiting Temples, Shopping Malls etc.",
+                    "default": true,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/a8f2fbd8d5608fd6890020e267a76f84b15f4d82.png?1594715131",
+                    "redirect_page": "ROUND_TRIP",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "one_way",
+                    "header": "One-Way to Nearby Cities",
+                    "sub_header": "Drop off in a nearby city after a one-way trip.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/9cb4c0cb2f3656a765db302650c5f867bb31e06a.png?1594715157",
+                    "redirect_page": "ONE_WAY",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "zap",
+                    "header": "Subscribe to a Personal Car",
+                    "sub_header": "Zoomcar subscription from 1 month upto 2 years.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/dacf266bd4d97a6c126e085de3b062b4049de891.png?1594715169",
+                    "redirect_page": "WEBPAGE",
+                    "metadata": {
+                        "url": "https://zoomcar.com/zap/subscribe",
+                        "title": "Subscribe to a Personal Car"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Kochi",
+            "link_name": "kochi",
+            "hd_enabled": true,
+            "hd_fee": 199,
+            "lat": "9.921507678364286",
+            "lng": "76.27103000879288",
+            "popular": false,
+            "one_way_enabled": true,
+            "id": "1fb87a4c-7a21-45a9-a4e3-f41ae78eba34",
+            "phone": "08068976666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/73152f43661d0e17c9c544bb5d69da80d62c7abc.png?1497538181",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": true,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 8
+                },
+                "search_default": "NO_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": [
+                {
+                    "name": "normal",
+                    "header": "Schedule a Round Trip",
+                    "sub_header": "Outstation Road Trips, Visiting Temples, Shopping Malls etc.",
+                    "default": true,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/a8f2fbd8d5608fd6890020e267a76f84b15f4d82.png?1594715131",
+                    "redirect_page": "ROUND_TRIP",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "one_way",
+                    "header": "One-Way to Nearby Cities",
+                    "sub_header": "Drop off in a nearby city after a one-way trip.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/9cb4c0cb2f3656a765db302650c5f867bb31e06a.png?1594715157",
+                    "redirect_page": "ONE_WAY",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Patna",
+            "link_name": "patna",
+            "hd_enabled": true,
+            "hd_fee": 399,
+            "lat": "25.588170854476576",
+            "lng": "85.13486411723193",
+            "popular": false,
+            "one_way_enabled": true,
+            "id": "5e8f68f6-225a-469e-ae09-d1568dbd9329",
+            "phone": "08068976666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/73152f43661d0e17c9c544bb5d69da80d62c7abc.png?1497538181",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": true,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 8
+                },
+                "search_default": "NO_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": [
+                {
+                    "name": "normal",
+                    "header": "Schedule a Round Trip",
+                    "sub_header": "Outstation Road Trips, Visiting Temples, Shopping Malls etc.",
+                    "default": true,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/a8f2fbd8d5608fd6890020e267a76f84b15f4d82.png?1594715131",
+                    "redirect_page": "ROUND_TRIP",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "one_way",
+                    "header": "One-Way to Nearby Cities",
+                    "sub_header": "Drop off in a nearby city after a one-way trip.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/9cb4c0cb2f3656a765db302650c5f867bb31e06a.png?1594715157",
+                    "redirect_page": "ONE_WAY",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Ranchi",
+            "link_name": "ranchi",
+            "hd_enabled": true,
+            "hd_fee": 300,
+            "lat": "23.306031436491008",
+            "lng": "85.32575463600688",
+            "popular": false,
+            "one_way_enabled": true,
+            "id": "d75563c4-1741-4075-bfab-7ec39ce54f88",
+            "phone": "08068976666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/73152f43661d0e17c9c544bb5d69da80d62c7abc.png?1497538181",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": false,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 8
+                },
+                "search_default": "NO_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": [
+                {
+                    "name": "normal",
+                    "header": "Schedule a Round Trip",
+                    "sub_header": "Outstation Road Trips, Visiting Temples, Shopping Malls etc.",
+                    "default": true,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/a8f2fbd8d5608fd6890020e267a76f84b15f4d82.png?1594715131",
+                    "redirect_page": "ROUND_TRIP",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "one_way",
+                    "header": "One-Way to Nearby Cities",
+                    "sub_header": "Drop off in a nearby city after a one-way trip.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/9cb4c0cb2f3656a765db302650c5f867bb31e06a.png?1594715157",
+                    "redirect_page": "ONE_WAY",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "zap",
+                    "header": "Subscribe to a Personal Car",
+                    "sub_header": "Zoomcar subscription from 1 month upto 2 years.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/dacf266bd4d97a6c126e085de3b062b4049de891.png?1594715169",
+                    "redirect_page": "WEBPAGE",
+                    "metadata": {
+                        "url": "https://zoomcar.com/zap/subscribe",
+                        "title": "Subscribe to a Personal Car"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Guwahati",
+            "link_name": "guwahati",
+            "hd_enabled": false,
+            "hd_fee": null,
+            "lat": "26.162012414311945",
+            "lng": "91.76513761281967",
+            "popular": false,
+            "one_way_enabled": true,
+            "id": "bc892e6a-d667-4eed-80aa-11e1dd4f5ad8",
+            "phone": "08068976666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/73152f43661d0e17c9c544bb5d69da80d62c7abc.png?1497538181",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": true,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 8
+                },
+                "search_default": "NO_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": [
+                {
+                    "name": "normal",
+                    "header": "Schedule a Round Trip",
+                    "sub_header": "Outstation Road Trips, Visiting Temples, Shopping Malls etc.",
+                    "default": true,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/a8f2fbd8d5608fd6890020e267a76f84b15f4d82.png?1594715131",
+                    "redirect_page": "ROUND_TRIP",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "one_way",
+                    "header": "One-Way to Nearby Cities",
+                    "sub_header": "Drop off in a nearby city after a one-way trip.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/9cb4c0cb2f3656a765db302650c5f867bb31e06a.png?1594715157",
+                    "redirect_page": "ONE_WAY",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "zap",
+                    "header": "Subscribe to a Personal Car",
+                    "sub_header": "Zoomcar subscription from 1 month upto 2 years.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/dacf266bd4d97a6c126e085de3b062b4049de891.png?1594715169",
+                    "redirect_page": "WEBPAGE",
+                    "metadata": {
+                        "url": "https://zoomcar.com/zap/subscribe",
+                        "title": "Subscribe to a Personal Car"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Bangalore",
+            "link_name": "bangalore",
+            "hd_enabled": true,
+            "hd_fee": 199,
+            "lat": "12.96095134541796",
+            "lng": "77.63711984605538",
+            "popular": true,
+            "one_way_enabled": true,
+            "id": "a4125ea1-5aa9-44fb-8511-fcf93582b867",
+            "phone": "08068976666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/photos/original/f00bd521d24e52b5ca9a2a3b8bb2ebf49df9e933.png?1497538418",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": true,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 8
+                },
+                "search_default": "NO_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": true,
+            "products": [
+                {
+                    "name": "normal",
+                    "header": "Schedule a Round Trip",
+                    "sub_header": "Outstation Road Trips, Visiting Temples, Shopping Malls etc.",
+                    "default": true,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/a8f2fbd8d5608fd6890020e267a76f84b15f4d82.png?1594715131",
+                    "redirect_page": "ROUND_TRIP",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "free_float",
+                    "header": "Ride Now within City",
+                    "sub_header": "Pick up immediately, Drop off anywhere within the city limits.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/40f7eaaedb8fcb3463922b5472b0bc28353eea0d.png?1594715143",
+                    "redirect_page": "FREE_FLOAT",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "one_way",
+                    "header": "One-Way to Nearby Cities",
+                    "sub_header": "Drop off in a nearby city after a one-way trip.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/9cb4c0cb2f3656a765db302650c5f867bb31e06a.png?1594715157",
+                    "redirect_page": "ONE_WAY",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "zap",
+                    "header": "Subscribe to a Personal Car",
+                    "sub_header": "Zoomcar subscription from 1 month upto 2 years.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/dacf266bd4d97a6c126e085de3b062b4049de891.png?1594715169",
+                    "redirect_page": "WEBPAGE",
+                    "metadata": {
+                        "url": "https://zoomcar.com/zap/subscribe",
+                        "title": "Subscribe to a Personal Car"
+                    }
+                },
+                {
+                    "name": "e_scooter",
+                    "header": "Pick Up an eScooter",
+                    "sub_header": "Go around within the city limits in the most affordable way.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/b848f84cceae5b70022c0d7705be259caf3e2f44.png?1594715185",
+                    "redirect_page": "AMPSEARCH",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Calicut",
+            "link_name": "calicut",
+            "hd_enabled": false,
+            "hd_fee": 199,
+            "lat": "11.258833339829588",
+            "lng": "75.77713014526364",
+            "popular": false,
+            "one_way_enabled": true,
+            "id": "64281d80-ecda-4248-814c-70ff539b6635",
+            "phone": "08068976666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/73152f43661d0e17c9c544bb5d69da80d62c7abc.png?1497538181",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": true,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 4
+                },
+                "search_default": "NO_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": [
+                {
+                    "name": "normal",
+                    "header": "Schedule a Round Trip",
+                    "sub_header": "Outstation Road Trips, Visiting Temples, Shopping Malls etc.",
+                    "default": true,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/a8f2fbd8d5608fd6890020e267a76f84b15f4d82.png?1594715131",
+                    "redirect_page": "ROUND_TRIP",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "one_way",
+                    "header": "One-Way to Nearby Cities",
+                    "sub_header": "Drop off in a nearby city after a one-way trip.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/9cb4c0cb2f3656a765db302650c5f867bb31e06a.png?1594715157",
+                    "redirect_page": "ONE_WAY",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "zap",
+                    "header": "Subscribe to a Personal Car",
+                    "sub_header": "Zoomcar subscription from 1 month upto 2 years.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/dacf266bd4d97a6c126e085de3b062b4049de891.png?1594715169",
+                    "redirect_page": "WEBPAGE",
+                    "metadata": {
+                        "url": "https://zoomcar.com/zap/subscribe",
+                        "title": "Subscribe to a Personal Car"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Jaipur",
+            "link_name": "jaipur",
+            "hd_enabled": true,
+            "hd_fee": 399,
+            "lat": "26.91204422056561",
+            "lng": "75.78791454434395",
+            "popular": false,
+            "one_way_enabled": true,
+            "id": "163fe7be-6efd-4c76-9cbf-ebe62465b22c",
+            "phone": "08068976666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/73152f43661d0e17c9c544bb5d69da80d62c7abc.png?1497538181",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": true,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 8
+                },
+                "search_default": "NO_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": [
+                {
+                    "name": "normal",
+                    "header": "Schedule a Round Trip",
+                    "sub_header": "Outstation Road Trips, Visiting Temples, Shopping Malls etc.",
+                    "default": true,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/a8f2fbd8d5608fd6890020e267a76f84b15f4d82.png?1594715131",
+                    "redirect_page": "ROUND_TRIP",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "one_way",
+                    "header": "One-Way to Nearby Cities",
+                    "sub_header": "Drop off in a nearby city after a one-way trip.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/9cb4c0cb2f3656a765db302650c5f867bb31e06a.png?1594715157",
+                    "redirect_page": "ONE_WAY",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "zap",
+                    "header": "Subscribe to a Personal Car",
+                    "sub_header": "Zoomcar subscription from 1 month upto 2 years.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/dacf266bd4d97a6c126e085de3b062b4049de891.png?1594715169",
+                    "redirect_page": "WEBPAGE",
+                    "metadata": {
+                        "url": "https://zoomcar.com/zap/subscribe",
+                        "title": "Subscribe to a Personal Car"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Lucknow",
+            "link_name": "lucknow",
+            "hd_enabled": true,
+            "hd_fee": 299,
+            "lat": "26.733346047732613",
+            "lng": "80.97919464111328",
+            "popular": false,
+            "one_way_enabled": true,
+            "id": "309525b9-e7e9-4c79-a943-fa427bb1f8be",
+            "phone": "08068976666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/73152f43661d0e17c9c544bb5d69da80d62c7abc.png?1497538181",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": true,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 8
+                },
+                "search_default": "NO_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": [
+                {
+                    "name": "normal",
+                    "header": "Schedule a Round Trip",
+                    "sub_header": "Outstation Road Trips, Visiting Temples, Shopping Malls etc.",
+                    "default": true,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/a8f2fbd8d5608fd6890020e267a76f84b15f4d82.png?1594715131",
+                    "redirect_page": "ROUND_TRIP",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "one_way",
+                    "header": "One-Way to Nearby Cities",
+                    "sub_header": "Drop off in a nearby city after a one-way trip.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/9cb4c0cb2f3656a765db302650c5f867bb31e06a.png?1594715157",
+                    "redirect_page": "ONE_WAY",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Guntur",
+            "link_name": "guntur",
+            "hd_enabled": false,
+            "hd_fee": 300,
+            "lat": "16.30102815215861",
+            "lng": "80.44203400611877",
+            "popular": false,
+            "one_way_enabled": false,
+            "id": "01113a21-8af0-4aa1-a23a-c39f3dbfb113",
+            "phone": "18601239666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/73152f43661d0e17c9c544bb5d69da80d62c7abc.png?1497538181",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": false,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 8
+                },
+                "search_default": "NO_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": [
+                {
+                    "name": "normal",
+                    "header": "Schedule a Round Trip",
+                    "sub_header": "Outstation Road Trips, Visiting Temples, Shopping Malls etc.",
+                    "default": true,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/a8f2fbd8d5608fd6890020e267a76f84b15f4d82.png?1594715131",
+                    "redirect_page": "ROUND_TRIP",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "zap",
+                    "header": "Subscribe to a Personal Car",
+                    "sub_header": "Zoomcar subscription from 1 month upto 2 years.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/dacf266bd4d97a6c126e085de3b062b4049de891.png?1594715169",
+                    "redirect_page": "WEBPAGE",
+                    "metadata": {
+                        "url": "https://zoomcar.com/zap/subscribe",
+                        "title": "Subscribe to a Personal Car"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Bhopal",
+            "link_name": "bhopal",
+            "hd_enabled": true,
+            "hd_fee": 0,
+            "lat": "23.22212204885421",
+            "lng": "77.43841529045449",
+            "popular": false,
+            "one_way_enabled": true,
+            "id": "4a3bff3d-7ee5-48fb-8422-027132f8d86d",
+            "phone": "08068976666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/73152f43661d0e17c9c544bb5d69da80d62c7abc.png?1497538181",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": true,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 8
+                },
+                "search_default": "NO_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": [
+                {
+                    "name": "normal",
+                    "header": "Schedule a Round Trip",
+                    "sub_header": "Outstation Road Trips, Visiting Temples, Shopping Malls etc.",
+                    "default": true,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/a8f2fbd8d5608fd6890020e267a76f84b15f4d82.png?1594715131",
+                    "redirect_page": "ROUND_TRIP",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "one_way",
+                    "header": "One-Way to Nearby Cities",
+                    "sub_header": "Drop off in a nearby city after a one-way trip.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/9cb4c0cb2f3656a765db302650c5f867bb31e06a.png?1594715157",
+                    "redirect_page": "ONE_WAY",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "zap",
+                    "header": "Subscribe to a Personal Car",
+                    "sub_header": "Zoomcar subscription from 1 month upto 2 years.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/dacf266bd4d97a6c126e085de3b062b4049de891.png?1594715169",
+                    "redirect_page": "WEBPAGE",
+                    "metadata": {
+                        "url": "https://zoomcar.com/zap/subscribe",
+                        "title": "Subscribe to a Personal Car"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Gannavaram- Vijayawada Airport",
+            "link_name": "gannavaram",
+            "hd_enabled": true,
+            "hd_fee": 300,
+            "lat": "16.523904242010833",
+            "lng": "80.79139709472656",
+            "popular": false,
+            "one_way_enabled": true,
+            "id": "6c7dd162-b2f4-4fee-91d5-6d24df4ac71f",
+            "phone": "18601239666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/73152f43661d0e17c9c544bb5d69da80d62c7abc.png?1497538181",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": false,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": false,
+                    "min_booking_hours": 0
+                },
+                "search_default": "WITH_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": []
+        },
+        {
+            "name": "Kolkata",
+            "link_name": "kolkata",
+            "hd_enabled": true,
+            "hd_fee": 500,
+            "lat": "22.53035146132967",
+            "lng": "88.35275245131925",
+            "popular": true,
+            "one_way_enabled": true,
+            "id": "031c2926-ac23-4978-afde-bca80738e92f",
+            "phone": "08068976666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/photos/original/1bd598da24dd1adf40782943d749b4ae985898d5.png?1497538676",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": true,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 8
+                },
+                "search_default": "NO_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": [
+                {
+                    "name": "normal",
+                    "header": "Schedule a Round Trip",
+                    "sub_header": "Outstation Road Trips, Visiting Temples, Shopping Malls etc.",
+                    "default": true,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/a8f2fbd8d5608fd6890020e267a76f84b15f4d82.png?1594715131",
+                    "redirect_page": "ROUND_TRIP",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "one_way",
+                    "header": "One-Way to Nearby Cities",
+                    "sub_header": "Drop off in a nearby city after a one-way trip.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/9cb4c0cb2f3656a765db302650c5f867bb31e06a.png?1594715157",
+                    "redirect_page": "ONE_WAY",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "zap",
+                    "header": "Subscribe to a Personal Car",
+                    "sub_header": "Zoomcar subscription from 1 month upto 2 years.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/dacf266bd4d97a6c126e085de3b062b4049de891.png?1594715169",
+                    "redirect_page": "WEBPAGE",
+                    "metadata": {
+                        "url": "https://zoomcar.com/zap/subscribe",
+                        "title": "Subscribe to a Personal Car"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Surat",
+            "link_name": "surat",
+            "hd_enabled": false,
+            "hd_fee": 200,
+            "lat": "21.189213510506796",
+            "lng": "72.90596008300781",
+            "popular": false,
+            "one_way_enabled": false,
+            "id": "455ee736-c41e-420c-9d26-2124384802bb",
+            "phone": "18601239666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/73152f43661d0e17c9c544bb5d69da80d62c7abc.png?1497538181",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": false,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 8
+                },
+                "search_default": "NO_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": [
+                {
+                    "header": "Schedule a Round Trip",
+                    "sub_header": "Outstation Road Trips, Visiting Temples, Shopping Malls etc.",
+                    "default": true,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/a8f2fbd8d5608fd6890020e267a76f84b15f4d82.png?1594715131",
+                    "redirect_page": "ROUND_TRIP",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Noida",
+            "link_name": "noida",
+            "hd_enabled": false,
+            "hd_fee": 300,
+            "lat": "28.63010064547333",
+            "lng": "77.081698179245",
+            "popular": false,
+            "one_way_enabled": false,
+            "id": "9c4cd915-b136-4871-b9b2-6d542b894fd0",
+            "phone": "18601239666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/73152f43661d0e17c9c544bb5d69da80d62c7abc.png?1497538181",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": false,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": false,
+                    "min_booking_hours": 0
+                },
+                "search_default": "WITH_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": []
+        },
+        {
+            "name": "Nagpur",
+            "link_name": "nagpur",
+            "hd_enabled": true,
+            "hd_fee": 0,
+            "lat": "21.14855378170439",
+            "lng": "79.09056007862091",
+            "popular": false,
+            "one_way_enabled": true,
+            "id": "0608e8f6-8ee5-463a-8f9d-8814bf1599c8",
+            "phone": "08068976666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/73152f43661d0e17c9c544bb5d69da80d62c7abc.png?1497538181",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": true,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 8
+                },
+                "search_default": "NO_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": [
+                {
+                    "name": "normal",
+                    "header": "Schedule a Round Trip",
+                    "sub_header": "Outstation Road Trips, Visiting Temples, Shopping Malls etc.",
+                    "default": true,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/a8f2fbd8d5608fd6890020e267a76f84b15f4d82.png?1594715131",
+                    "redirect_page": "ROUND_TRIP",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "one_way",
+                    "header": "One-Way to Nearby Cities",
+                    "sub_header": "Drop off in a nearby city after a one-way trip.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/9cb4c0cb2f3656a765db302650c5f867bb31e06a.png?1594715157",
+                    "redirect_page": "ONE_WAY",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "zap",
+                    "header": "Subscribe to a Personal Car",
+                    "sub_header": "Zoomcar subscription from 1 month upto 2 years.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/dacf266bd4d97a6c126e085de3b062b4049de891.png?1594715169",
+                    "redirect_page": "WEBPAGE",
+                    "metadata": {
+                        "url": "https://zoomcar.com/zap/subscribe",
+                        "title": "Subscribe to a Personal Car"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Tezpur",
+            "link_name": "self-driving-rental-cars-in-tezpur",
+            "hd_enabled": false,
+            "hd_fee": null,
+            "lat": "26.65089276583196",
+            "lng": "92.80764850686387",
+            "popular": false,
+            "one_way_enabled": false,
+            "id": "6d0332cf-2a62-4ab9-ae60-95cfc38a1c1c",
+            "phone": "18601239666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/73152f43661d0e17c9c544bb5d69da80d62c7abc.png?1497538181",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": false,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": false,
+                    "min_booking_hours": 0
+                },
+                "search_default": "WITH_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": []
+        },
+        {
+            "name": "Raipur",
+            "link_name": "raipur",
+            "hd_enabled": true,
+            "hd_fee": 399,
+            "lat": "21.239201141300235",
+            "lng": "81.63564090531963",
+            "popular": false,
+            "one_way_enabled": true,
+            "id": "f7f747ca-b802-4464-82b8-97593d64e88d",
+            "phone": "08068976666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/73152f43661d0e17c9c544bb5d69da80d62c7abc.png?1497538181",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": true,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 8
+                },
+                "search_default": "NO_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": [
+                {
+                    "name": "normal",
+                    "header": "Schedule a Round Trip",
+                    "sub_header": "Outstation Road Trips, Visiting Temples, Shopping Malls etc.",
+                    "default": true,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/a8f2fbd8d5608fd6890020e267a76f84b15f4d82.png?1594715131",
+                    "redirect_page": "ROUND_TRIP",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "zap",
+                    "header": "Subscribe to a Personal Car",
+                    "sub_header": "Zoomcar subscription from 1 month upto 2 years.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/dacf266bd4d97a6c126e085de3b062b4049de891.png?1594715169",
+                    "redirect_page": "WEBPAGE",
+                    "metadata": {
+                        "url": "https://zoomcar.com/zap/subscribe",
+                        "title": "Subscribe to a Personal Car"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Ghaziabad",
+            "link_name": "ghaziabad",
+            "hd_enabled": false,
+            "hd_fee": 300,
+            "lat": "28.630085874444994",
+            "lng": "77.08152710460126",
+            "popular": false,
+            "one_way_enabled": false,
+            "id": "6ace8ef7-ef55-4083-94cc-8c0400fb900b",
+            "phone": "18601239666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/73152f43661d0e17c9c544bb5d69da80d62c7abc.png?1497538181",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": false,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": false,
+                    "min_booking_hours": 0
+                },
+                "search_default": "WITH_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": []
+        },
+        {
+            "name": "Vijayawada",
+            "link_name": "vijayawada",
+            "hd_enabled": true,
+            "hd_fee": 299,
+            "lat": "16.78219076489986",
+            "lng": "80.5517578125",
+            "popular": false,
+            "one_way_enabled": true,
+            "id": "2b11c8e2-8a1d-49f2-825c-2aa2e7e79f59",
+            "phone": "08068976666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/73152f43661d0e17c9c544bb5d69da80d62c7abc.png?1497538181",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": true,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 8
+                },
+                "search_default": "NO_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": [
+                {
+                    "name": "normal",
+                    "header": "Schedule a Round Trip",
+                    "sub_header": "Outstation Road Trips, Visiting Temples, Shopping Malls etc.",
+                    "default": true,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/a8f2fbd8d5608fd6890020e267a76f84b15f4d82.png?1594715131",
+                    "redirect_page": "ROUND_TRIP",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "one_way",
+                    "header": "One-Way to Nearby Cities",
+                    "sub_header": "Drop off in a nearby city after a one-way trip.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/9cb4c0cb2f3656a765db302650c5f867bb31e06a.png?1594715157",
+                    "redirect_page": "ONE_WAY",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "zap",
+                    "header": "Subscribe to a Personal Car",
+                    "sub_header": "Zoomcar subscription from 1 month upto 2 years.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/dacf266bd4d97a6c126e085de3b062b4049de891.png?1594715169",
+                    "redirect_page": "WEBPAGE",
+                    "metadata": {
+                        "url": "https://zoomcar.com/zap/subscribe",
+                        "title": "Subscribe to a Personal Car"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Mumbai",
+            "link_name": "mumbai",
+            "hd_enabled": true,
+            "hd_fee": 300,
+            "lat": "19.01019029439606",
+            "lng": "73.03934097290039",
+            "popular": true,
+            "one_way_enabled": true,
+            "id": "335e2ef8-9259-40a3-a691-4254b1c0cf9e",
+            "phone": "08068976666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/photos/original/e1abfe1b888a392ff8cc7ac4b19be66026bc4d0e.png?1497538549",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": true,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 8
+                },
+                "search_default": "NO_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": [
+                {
+                    "name": "normal",
+                    "header": "Schedule a Round Trip",
+                    "sub_header": "Outstation Road Trips, Visiting Temples, Shopping Malls etc.",
+                    "default": true,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/a8f2fbd8d5608fd6890020e267a76f84b15f4d82.png?1594715131",
+                    "redirect_page": "ROUND_TRIP",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "one_way",
+                    "header": "One-Way to Nearby Cities",
+                    "sub_header": "Drop off in a nearby city after a one-way trip.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/9cb4c0cb2f3656a765db302650c5f867bb31e06a.png?1594715157",
+                    "redirect_page": "ONE_WAY",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "zap",
+                    "header": "Subscribe to a Personal Car",
+                    "sub_header": "Zoomcar subscription from 1 month upto 2 years.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/dacf266bd4d97a6c126e085de3b062b4049de891.png?1594715169",
+                    "redirect_page": "WEBPAGE",
+                    "metadata": {
+                        "url": "https://zoomcar.com/zap/subscribe",
+                        "title": "Subscribe to a Personal Car"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Jodhpur",
+            "link_name": "jodhpur",
+            "hd_enabled": false,
+            "hd_fee": 300,
+            "lat": "26.236429705178004",
+            "lng": "73.025532309244",
+            "popular": false,
+            "one_way_enabled": false,
+            "id": "605a62f3-31f3-469e-9278-149e24cbec0f",
+            "phone": "18601239666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/73152f43661d0e17c9c544bb5d69da80d62c7abc.png?1497538181",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": false,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 8
+                },
+                "search_default": "NO_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": [
+                {
+                    "header": "Schedule a Round Trip",
+                    "sub_header": "Outstation Road Trips, Visiting Temples, Shopping Malls etc.",
+                    "default": true,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/a8f2fbd8d5608fd6890020e267a76f84b15f4d82.png?1594715131",
+                    "redirect_page": "ROUND_TRIP",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Hassan",
+            "link_name": "hassan",
+            "hd_enabled": false,
+            "hd_fee": 300,
+            "lat": "12.862765692183409",
+            "lng": "76.50346755981445",
+            "popular": false,
+            "one_way_enabled": false,
+            "id": "1b06941d-a3db-420c-94b4-766eb2cd1894",
+            "phone": "18601239666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/73152f43661d0e17c9c544bb5d69da80d62c7abc.png?1497538181",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": false,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": false,
+                    "min_booking_hours": 0
+                },
+                "search_default": "WITH_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": []
+        },
+        {
+            "name": "Tirupati",
+            "link_name": "tirupati",
+            "hd_enabled": true,
+            "hd_fee": 300,
+            "lat": "13.62730271586922",
+            "lng": "79.41911995410919",
+            "popular": false,
+            "one_way_enabled": false,
+            "id": "a78c5035-b2dd-4f71-9b49-1fd2047eca2f",
+            "phone": "18601239666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/73152f43661d0e17c9c544bb5d69da80d62c7abc.png?1497538181",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": false,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 8
+                },
+                "search_default": "NO_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": [
+                {
+                    "header": "Schedule a Round Trip",
+                    "sub_header": "Outstation Road Trips, Visiting Temples, Shopping Malls etc.",
+                    "default": true,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/a8f2fbd8d5608fd6890020e267a76f84b15f4d82.png?1594715131",
+                    "redirect_page": "ROUND_TRIP",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Mangalore",
+            "link_name": "mangalore",
+            "hd_enabled": true,
+            "hd_fee": 399,
+            "lat": "12.9117118742591",
+            "lng": "74.88504409790039",
+            "popular": false,
+            "one_way_enabled": true,
+            "id": "ff5cb7a5-e9c3-4762-a577-ade416574f07",
+            "phone": "08068976666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/73152f43661d0e17c9c544bb5d69da80d62c7abc.png?1497538181",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": false,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 8
+                },
+                "search_default": "NO_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": [
+                {
+                    "name": "normal",
+                    "header": "Schedule a Round Trip",
+                    "sub_header": "Outstation Road Trips, Visiting Temples, Shopping Malls etc.",
+                    "default": true,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/a8f2fbd8d5608fd6890020e267a76f84b15f4d82.png?1594715131",
+                    "redirect_page": "ROUND_TRIP",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "one_way",
+                    "header": "One-Way to Nearby Cities",
+                    "sub_header": "Drop off in a nearby city after a one-way trip.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/9cb4c0cb2f3656a765db302650c5f867bb31e06a.png?1594715157",
+                    "redirect_page": "ONE_WAY",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "zap",
+                    "header": "Subscribe to a Personal Car",
+                    "sub_header": "Zoomcar subscription from 1 month upto 2 years.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/dacf266bd4d97a6c126e085de3b062b4049de891.png?1594715169",
+                    "redirect_page": "WEBPAGE",
+                    "metadata": {
+                        "url": "https://zoomcar.com/zap/subscribe",
+                        "title": "Subscribe to a Personal Car"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Bhuj",
+            "link_name": "bhuj",
+            "hd_enabled": true,
+            "hd_fee": 300,
+            "lat": "23.22957983545989",
+            "lng": "69.63965553155322",
+            "popular": false,
+            "one_way_enabled": true,
+            "id": "56efa3d6-a99b-4c94-aee4-4d39e6e8e0e3",
+            "phone": "18601239666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/73152f43661d0e17c9c544bb5d69da80d62c7abc.png?1497538181",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": false,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": false,
+                    "min_booking_hours": 0
+                },
+                "search_default": "WITH_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": []
+        },
+        {
+            "name": "Ahmedabad",
+            "link_name": "ahmedabad",
+            "hd_enabled": true,
+            "hd_fee": 199,
+            "lat": "23.022867960949082",
+            "lng": "72.57513642311096",
+            "popular": false,
+            "one_way_enabled": true,
+            "id": "b5c81443-ef75-489a-8afb-683ddc9d2bcd",
+            "phone": "08068976666",
+            "icon": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/73152f43661d0e17c9c544bb5d69da80d62c7abc.png?1497538181",
+            "img": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/e0d45cd679e056aa8268bc04d025f79505cf03f1.jpg?1587744262",
+            "enabled": true,
+            "bracket": {
+                "with_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 0
+                },
+                "no_fuel": {
+                    "enabled": true,
+                    "min_booking_hours": 8
+                },
+                "search_default": "NO_FUEL"
+            },
+            "radius": 100000,
+            "hd_duration": 180,
+            "amp_enabled": false,
+            "products": [
+                {
+                    "name": "normal",
+                    "header": "Schedule a Round Trip",
+                    "sub_header": "Outstation Road Trips, Visiting Temples, Shopping Malls etc.",
+                    "default": true,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/a8f2fbd8d5608fd6890020e267a76f84b15f4d82.png?1594715131",
+                    "redirect_page": "ROUND_TRIP",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "one_way",
+                    "header": "One-Way to Nearby Cities",
+                    "sub_header": "Drop off in a nearby city after a one-way trip.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/9cb4c0cb2f3656a765db302650c5f867bb31e06a.png?1594715157",
+                    "redirect_page": "ONE_WAY",
+                    "metadata": {
+                        "url": null,
+                        "title": null
+                    }
+                },
+                {
+                    "name": "zap",
+                    "header": "Subscribe to a Personal Car",
+                    "sub_header": "Zoomcar subscription from 1 month upto 2 years.",
+                    "default": false,
+                    "image": "https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/dacf266bd4d97a6c126e085de3b062b4049de891.png?1594715169",
+                    "redirect_page": "WEBPAGE",
+                    "metadata": {
+                        "url": "https://zoomcar.com/zap/subscribe",
+                        "title": "Subscribe to a Personal Car"
+                    }
+                }
+            ]
         }
     ],
-    "status": "OK"
+    "msg": "success"
 }
