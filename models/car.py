@@ -1,7 +1,9 @@
+from devtools import debug
 from datetime import date
 from pydantic import BaseModel
 from datetime import datetime
 from typing import Optional
+# from utils.config import TAX_AMOUNT
 
 
 class PickUpDropOff:
@@ -39,36 +41,39 @@ class Car(BaseModel):
         def __init__(self, carModel):
             self.carModel = carModel
 
-        def car_info(self):
+        def carInfo(self):
             pass
 
 
-class BillingDB(BaseModel):
-    billId: int
+class Amount(BaseModel):
     initialAmount: float
-    discountAmount: float
-    taxAmount: float
     securityDeposit: float
-    finalAmount: float
+    finalAmount: Optional[float] = None
+
+
+class BillingDB(BaseModel):
+    billId: str
     billStatus: str
-    billDate: date
+    amount: Amount
+    promo: Optional[str] = None
+    billDate: Optional[datetime] = None
+
+# promo:str -> Billing (if exists in db) -> return trye
+# else false
 
 
-class Billing(BillingDB):
-    def __init__(self, billId):
-        self.promo = None
-        self.billId = billId
+class Billing:
+    def __init__(self, amount: Amount, promo=None):
+        self.initialAmount = amount.initialAmount
+        self.securityDeposit = amount.securityDeposit
+        self.taxAmount = self.initialAmount * 0.18
+        self.promo = promo
 
-    def new_bill(self, initialAmount, discountAmount, securityDeposit) -> None:
-        self.initialAmount = initialAmount
-        self.discountAmount = discountAmount
-        self.securityDeposit = securityDeposit
-        self.taxAmount = (self.initialAmount * 0.18)
-
-    def final_Amount(self, finalAmount) -> float:
+    def finalAmount(self) -> float:
         money = 0
         if self.promo:
-            money = PromoCode(self.promo).discounted_price(self.initialAmount)
+            print("here")
+            money = PromoCode(self.promo).discountedPrice(self.initialAmount)
         finalAmount = self.initialAmount + self.securityDeposit + self.taxAmount - money
         return finalAmount
 
@@ -82,30 +87,37 @@ class PromoCodeDB(BaseModel):
     code: str
     discountPercentage: float
     minPurchase: float
-    expDate: date
 
 
-class PromoCode(PromoCodeDB):
+class PromoCode:
     def __init__(self, code):
         self.code = code
+        self.minPurchase = 1000
 
-    def new_code(self, code, discount, minPurchase, exp) -> None:
+    def newCode(self, code, discount, minPurchase) -> None:
+        """Admin Interface
+
+        Args:
+            code (str): Code
+            discount (float): Percentage
+            minPurchase (float): Minimum Purchase
+        """
         self.code = code
         self.discount = discount
         self.minPurchase = minPurchase
-        self.expDate = exp
 
     def validator(self, initial_price: float) -> bool:
         if(initial_price < self.minPurchase):
             return False
-        if (datetime.now() > self.expDate):
-            return False
         return True
 
-    def discounted_price(self, initial_price: float) -> float:
+    def discountedPrice(self, initial_price: float) -> float:
         money = 0
         if(self.validator(initial_price)):
-            money = initial_price * self.discountPercentage/100
-            return money
-        else:
-            return money
+            money = initial_price * 0.10  # update the constant
+        return money
+
+
+amount = {"initialAmount": 1000, "securityDeposit": 2500}
+bill = Billing(Amount(**amount), promo="abc")
+print(bill.finalAmount())

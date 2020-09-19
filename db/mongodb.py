@@ -58,10 +58,21 @@ async def get_locations(city: Optional[str] = None):
     db = client["car_rental"]
     collection = db.locations
     if city:
-        row = collection.find({"city": city})
+        row = collection.find({"city_link_name": city})
     else:
         row = collection.find({})
     row = await row.to_list(length=100)
     for i in row:
         i['_id'] = str(i['_id'])
     return {"locations": row}
+
+
+async def get_cars():
+    client = await get_nosql_db()
+    db = client["car_rental"]
+    collection = db.cars
+    row = collection.find({})
+    row = await row.to_list(length=100)
+    for i in row:
+        i['_id'] = str(i['_id'])
+    return {"cars": row}

@@ -1,4 +1,4 @@
-from db.mongodb import get_locations
+from db.mongodb import get_locations, get_cars
 from utils.cart import from_frontend
 from models.user import Address
 from pydantic import BaseModel
@@ -61,9 +61,9 @@ async def read_own_items(current_user: User = Depends(get_current_active_user)):
     return [{"item_id": "Foo", "owner": current_user.username}]
 
 
-@app.get('/hello')
-async def namaskaar(cur_user: User = Depends(get_current_active_user)):
-    return {"status": "hello world"}
+# @app.get('/hello')
+# async def namaskaar(cur_user: User = Depends(get_current_active_user)):
+#     return {"status": "hello world"}
 
 
 @app.get('/address')
@@ -74,6 +74,19 @@ async def get_options(city: Optional[str] = None):
         data = await get_locations()
     return data
 
+
+@app.get('/billing')
+async def get_billing():
+    from models.car import Billing
+    # bill = Billing("abcd", 10000, 2000)
+    # resp = bill.finalAmount()
+    return {"final_bill": "test"}
+
+
+@app.get('/search')
+async def getCars():
+    data = await get_cars()
+    return data
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000, debug=True)
