@@ -1,4 +1,3 @@
-from devtools import debug
 from datetime import date
 from pydantic import BaseModel
 from datetime import datetime
@@ -33,6 +32,7 @@ class Car(BaseModel):
     availability: bool
     transmition: str
     basePrice: float
+    photo: str
 
     def __init__(self, carId):
         self.carId = carId
